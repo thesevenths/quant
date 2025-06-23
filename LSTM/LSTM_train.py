@@ -11,7 +11,7 @@ np.random.seed(42)
 
 
 # 1. 数据加载与预处理
-def load_data(file_path='btc_daily.csv'):
+def load_data(file_path='E:/AI_Quant/data/btc_daily.csv'):
     df = pd.read_csv(file_path)
     df['datetime'] = pd.to_datetime(df['datetime'])
     df.set_index('datetime', inplace=True)
@@ -84,7 +84,6 @@ def calculate_cumulative_return(predictions, actuals):
     return np.cumprod(1 + strategy_returns)
 
 
-
 def plot_cumulative_return(train_actual, train_pred, val_actual, val_pred, test_actual, test_pred):
     # 确保预测值和实际值的长度一致
     train_cr = calculate_cumulative_return(train_pred[:, 0], train_actual)
@@ -101,6 +100,65 @@ def plot_cumulative_return(train_actual, train_pred, val_actual, val_pred, test_
     plt.title('BTC Trading Cumulative Return')
     plt.xlabel('Time (days)')
     plt.ylabel('Cumulative Return')
+    plt.grid(True)
+    plt.show()
+
+
+def build_prediction_dataframe(dates, y, train_predict, val_predict, test_predict, look_back, train_size, val_size):
+    """
+    构建包含时间、真实价格、预测价格、策略收益率的DataFrame
+    """
+    total_len = len(train_predict) + len(val_predict) + len(test_predict)
+    start_idx = look_back + 1  # 对应第一个可用预测值的位置
+
+    # 对应的时间索引
+    valid_dates = dates[start_idx:start_idx + total_len]
+
+    # 拼接预测值
+    full_predict = np.concatenate([train_predict, val_predict, test_predict]).flatten()
+
+    # 反归一化真实值
+    actual_prices = scaler.inverse_transform(y.reshape(-1, 1)).flatten()
+
+    actual_prices = actual_prices[:total_len]
+
+    # 计算策略收益率：如果预测涨就做多，否则做空
+    actual_returns = np.diff(actual_prices) / actual_prices[:-1]
+    pred_returns = np.diff(full_predict) / full_predict[:-1]
+    strategy_returns = np.where(pred_returns > 0, actual_returns, -actual_returns)
+    strategy_returns = np.insert(strategy_returns, 0, 0)  # 补一个0开头，长度一致
+
+    df = pd.DataFrame({
+        'datetime': valid_dates,
+        'actual_price': actual_prices,
+        'predicted_price': full_predict,
+        'strategy_return': strategy_returns
+    })
+    df.set_index('datetime', inplace=True)
+    return df
+
+
+def plot_price_and_return(df):
+    """
+    绘制实际价格、预测价格与策略收益率（共享时间轴）
+    """
+    fig, ax1 = plt.subplots(figsize=(15, 6))
+
+    # 价格
+    ax1.plot(df.index, df['actual_price'], label='Actual Price', color='black', linewidth=1.5)
+    ax1.plot(df.index, df['predicted_price'], label='Predicted Price', color='blue', linestyle='--')
+    ax1.set_ylabel('Price (USD)', color='black')
+    ax1.tick_params(axis='y', labelcolor='black')
+    ax1.legend(loc='upper left')
+
+    # 策略收益率（右轴）
+    ax2 = ax1.twinx()
+    ax2.plot(df.index, df['strategy_return'], label='Strategy Return', color='green', alpha=0.4)
+    ax2.set_ylabel('Strategy Return', color='green')
+    ax2.tick_params(axis='y', labelcolor='green')
+    ax2.legend(loc='upper right')
+
+    plt.title('BTC Actual vs Predicted Price and Strategy Return')
     plt.grid(True)
     plt.show()
 
@@ -162,3 +220,11 @@ if __name__ == '__main__':
         scaler.inverse_transform([y_test])[0],
         test_predict
     )
+
+    # 构建 DataFrame 并可视化
+    df_plot = build_prediction_dataframe(dates, y, train_predict, val_predict, test_predict, look_back,
+                                         len(train_predict), len(val_predict))
+    plot_price_and_return(df_plot)
+
+    # 如果你想保存为 CSV 可加上：
+    df_plot.to_csv('btc_lstm_predictions_with_returns.csv')
