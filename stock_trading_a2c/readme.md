@@ -12,4 +12,7 @@ The performance of this model is not good enough and is also unstable.;
 **data granularity**: The granularity of daily frequency data is too coarse. More detailed data, such as minute-level or order flow data, is required.  
 **State design**: The market conditions and account data are simply concatenated without any processing.  
 **Reward**: There is room for further optimization(**most important factor in reinforcement learning**).  
-**Hyperparameter tuning**: Comparative analysis is necessary.  
+**Hyperparameter tuning**: Comparative analysis is necessary.    
+
+**Decomposition of Reinforcement Learning Elements**
+![img_2.png](img_2.png)
