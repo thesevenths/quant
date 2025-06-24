@@ -9,6 +9,8 @@ import os
 import torch.nn as nn
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f'device:{device}')
+
 
 def predict(model, test_loader):
     model.eval()
@@ -107,7 +109,7 @@ if __name__ == "__main__":
     learning_rate = 0.001
 
     # Load data
-    df = dataset.load_data('btc_daily.csv')
+    df = dataset.load_data('bitcoin_price.csv')
     data = df[['open', 'high', 'low', 'close', 'volume']].values
     feature_names = ['open', 'high', 'low', 'close', 'volume']
     input_dim = data.shape[1]  # 5 features
