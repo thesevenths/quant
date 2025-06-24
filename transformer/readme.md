@@ -26,3 +26,8 @@ low: -0.0210
 high: -0.0360  
 volume: -0.0579  
 close: -0.0645  
+
+=================2025.6.24 22:50===============  
+chang to another dataset lead to a totally different result:  
+![img1.png](img1.png)  
+predicted close absolutely useless!  
