@@ -20,27 +20,85 @@ def predict(model, test_loader):
             predictions.append(outputs.cpu().numpy())
     return np.concatenate(predictions)
 
-def analyze_factor_importance(model, test_loader, feature_names):
+# 梯度-based 方法
+def analyze_factor_importance_gradient(model, test_loader, feature_names):
     model.eval()
-    with torch.no_grad():
-        for sequences, _ in test_loader:
-            sequences = sequences.to(device)
-            _ = model(sequences)  # Forward pass to populate attn_weights
-            if model.attn_weights is not None and model.attn_weights.dim() >= 2:
-                attn_weights = model.attn_weights.mean(dim=0).cpu().numpy()  # Average over batch
-                feature_scores = attn_weights.mean(axis=0)
-                importance = dict(zip(feature_names, feature_scores))
-                sorted_importance = sorted(importance.items(), key=lambda x: x[1], reverse=True)
-                print("\nFactor Importance (based on attention weights):")
-                for factor, score in sorted_importance:
-                    print(f"{factor}: {score:.4f}")
-            else:
-                print("\nWarning: Attention weights not available. Factor importance analysis skipped.")
-            break  # Only need one batch for analysis
+    gradients = []
+    for sequences, _ in test_loader:
+        sequences = sequences.to(device)
+        sequences.requires_grad_()
+        outputs = model(sequences)
+        grad = torch.autograd.grad(outputs.sum(), sequences)[0]
+        gradients.append(grad.cpu().numpy())
+    gradients = np.concatenate(gradients)
+    feature_importance = np.mean(np.abs(gradients), axis=(0, 1))
+    importance = dict(zip(feature_names, feature_importance))
+    sorted_importance = sorted(importance.items(), key=lambda x: x[1], reverse=True)
+    print("\nFactor Importance (Gradient-based):")
+    for factor, score in sorted_importance:
+        print(f"{factor}: {score:.4f}")
+
+# 置换重要性 (Permutation Importance)
+def analyze_factor_importance_permutation(model, test_loader, feature_names, criterion):
+    model.eval()
+    baseline_loss = 0
+    for sequences, targets in test_loader:
+        sequences, targets = sequences.to(device), targets.to(device)
+        outputs = model(sequences)
+        loss = criterion(outputs.squeeze(), targets)
+        baseline_loss += loss.item()
+    baseline_loss /= len(test_loader)
+
+    importance = {}
+    for i, feature in enumerate(feature_names):
+        permuted_loss = 0
+        for sequences, targets in test_loader:
+            sequences = sequences.clone()
+            sequences[:, :, i] = sequences[:, :, i][torch.randperm(sequences.size(0))]
+            sequences, targets = sequences.to(device), targets.to(device)
+            outputs = model(sequences)
+            loss = criterion(outputs.squeeze(), targets)
+            permuted_loss += loss.item()
+        permuted_loss /= len(test_loader)
+        importance[feature] = permuted_loss - baseline_loss
+
+    sorted_importance = sorted(importance.items(), key=lambda x: x[1], reverse=True)
+    print("\nFactor Importance (Permutation Importance):")
+    for factor, score in sorted_importance:
+        print(f"{factor}: {score:.4f}")
+
+# 特征消融 (Feature Ablation)
+def analyze_factor_importance_ablation(model, test_loader, feature_names, criterion):
+    model.eval()
+    baseline_loss = 0
+    for sequences, targets in test_loader:
+        sequences, targets = sequences.to(device), targets.to(device)
+        outputs = model(sequences)
+        loss = criterion(outputs.squeeze(), targets)
+        baseline_loss += loss.item()
+    baseline_loss /= len(test_loader)
+
+    importance = {}
+    for i, feature in enumerate(feature_names):
+        ablated_loss = 0
+        for sequences, targets in test_loader:
+            sequences = sequences.clone()
+            sequences[:, :, i] = 0  # 将特征设置为 0
+            sequences, targets = sequences.to(device), targets.to(device)
+            outputs = model(sequences)
+            loss = criterion(outputs.squeeze(), targets)
+            ablated_loss += loss.item()
+        ablated_loss /= len(test_loader)
+        importance[feature] = ablated_loss - baseline_loss
+
+    sorted_importance = sorted(importance.items(), key=lambda x: x[1], reverse=True)
+    print("\nFactor Importance (Feature Ablation):")
+    for factor, score in sorted_importance:
+        print(f"{factor}: {score:.4f}")
 
 if __name__ == "__main__":
     # Hyperparameters
-    seq_length = 30  # Use past 30 days
+    seq_length = 30
     batch_size = 32
     num_epochs = 50
     model_dim = 64
@@ -52,7 +110,6 @@ if __name__ == "__main__":
     df = dataset.load_data('btc_daily.csv')
     data = df[['open', 'high', 'low', 'close', 'volume']].values
     feature_names = ['open', 'high', 'low', 'close', 'volume']
-    # Model parameters
     input_dim = data.shape[1]  # 5 features
     output_dim = 1
 
@@ -65,27 +122,25 @@ if __name__ == "__main__":
         model.load_state_dict(torch.load(model_path))
         print(model)
     else:
-        print("no model found...")
-
+        print("No model found...")
 
     # Normalize data
     scaler = StandardScaler()
     data_scaled = scaler.fit_transform(data)
-    # Create sequences
     sequences, targets = dataset.create_sequences(data_scaled, seq_length)
-    # Split into train (80%) and test (20%)
     split_idx = int(len(sequences) * 0.8)
     train_sequences, test_sequences = sequences[:split_idx], sequences[split_idx:]
     train_targets, test_targets = targets[:split_idx], targets[split_idx:]
 
     test_dataset = dataset.TimeSeriesDataset(test_sequences, test_targets)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
     # Predict on test set
     predictions = predict(model, test_loader)
 
     # Inverse transform predictions and targets
     dummy = np.zeros((len(test_targets), data.shape[1]))
-    dummy[:, 3] = test_targets  # Close price column
+    dummy[:, 3] = test_targets
     actual_close = scaler.inverse_transform(dummy)[:, 3]
     dummy[:, 3] = predictions.squeeze()
     predicted_close = scaler.inverse_transform(dummy)[:, 3]
@@ -101,5 +156,9 @@ if __name__ == "__main__":
     plt.grid(True)
     plt.show()
 
-    # Analyze factor importance
-    analyze_factor_importance(model, test_loader, feature_names)
+    # Analyze factor importance using all three methods
+    criterion = nn.MSELoss()
+    print("\n=== Analyzing Factor Importance ===")
+    analyze_factor_importance_gradient(model, test_loader, feature_names)
+    analyze_factor_importance_permutation(model, test_loader, feature_names, criterion)
+    analyze_factor_importance_ablation(model, test_loader, feature_names, criterion)
