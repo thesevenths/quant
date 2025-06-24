@@ -31,3 +31,40 @@ close: -0.0645
 chang to another dataset lead to a totally different result:  
 ![img1.png](img1.png)  
 predicted close absolutely useless!  
+from loss we can see, it may over fitting!  
+Epoch 1/50, Loss: 0.2788  
+Epoch 2/50, Loss: 0.0044  
+Epoch 3/50, Loss: 0.0008  
+Epoch 4/50, Loss: 0.0006  
+Epoch 5/50, Loss: 0.0006  
+Epoch 6/50, Loss: 0.0007  
+...........  
+Epoch 46/50, Loss: 0.0004  
+Epoch 47/50, Loss: 0.0005  
+Epoch 48/50, Loss: 0.0004  
+Epoch 49/50, Loss: 0.0004  
+Epoch 50/50, Loss: 0.0004  
+
+
+=== Analyzing Factor Importance ===  
+
+Factor Importance (Gradient-based):  
+open: 0.0008   
+low: 0.0007  
+volume: 0.0005  
+high: 0.0005  
+close: 0.0004  
+
+Factor Importance (Permutation Importance):  
+close: 0.0003  
+open: -0.0002  
+low: -0.0007  
+high: -0.0011  
+volume: -0.0012  
+
+Factor Importance (Feature Ablation):  
+close: 0.0541  
+volume: -0.0152  
+high: -0.0385  
+low: -0.0622  
+open: -0.0734  
