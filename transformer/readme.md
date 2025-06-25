@@ -46,8 +46,13 @@ Epoch 49/50, Loss: 0.0004
 Epoch 50/50, Loss: 0.0004  
 
 One of the most important reasons:  
-  **is that the training data is relatively stable, but the test dataset is quite different (the closing price has increased by more than ten times:from 1200 to 20000) from the train data(relatively stable:from 750 to 1200，that's why on test data, the predicted close price is also very stable). The model has not learned the price patterns from the training data, or in other words, the training data has over fitted.**  
-
+  **is that the training data is relatively stable, but the test dataset is quite different (the closing price has increased by more than ten times:from 1200 to 20000) from the train data(relatively stable:from 750 to 1200，that's why on test data, the predicted close price is also very stable). The model has not learned the price patterns from the training data, or in other words, the training data has over fitted.**    
+  
+  ### **Bitcoin's 2017 Boom & 2018 Crash**  
+- **Surge to ~$20K**: Driven by retail FOMO, Japanese legalization, and CME futures launch.  
+- **Key factors**: Institutional interest (e.g., Grayscale), ICO mania, post-China-ban rebound, and reduced supply post-2016 halving.  
+- **Crash in 2018**: Bubble burst, global regulatory crackdowns (China/S. Korea), and exchange hacks led to a drop below $3K.  
+- **Legacy**: A hype cycle highlighting crypto's volatility and speculative nature.  
 
 === Analyzing Factor Importance ===  
 
