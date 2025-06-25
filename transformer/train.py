@@ -39,7 +39,7 @@ if __name__ == "__main__":
     learning_rate = 0.001
 
     # Load data
-    df = dataset.load_data('bitcoin_price.csv')
+    df = dataset.load_data('btc_daily.csv')
     data = df[['open', 'high', 'low', 'close', 'volume']].values
     feature_names = ['open', 'high', 'low', 'close', 'volume']
 
@@ -70,8 +70,8 @@ if __name__ == "__main__":
     model = model.TransformerModel(input_dim, model_dim, num_heads, num_layers, output_dim).to(device)
 
     if os.path.exists(model_path):
-        print("Loading existing model...")
-        model.load_state_dict(torch.load(model_path))
+        print("model already existed...")
+        # model.load_state_dict(torch.load(model_path))
     else:
         print("Training new model...")
         criterion = nn.MSELoss()

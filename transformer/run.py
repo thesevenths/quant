@@ -109,7 +109,7 @@ if __name__ == "__main__":
     learning_rate = 0.001
 
     # Load data
-    df = dataset.load_data('bitcoin_price.csv')
+    df = dataset.load_data('btc_daily.csv')
     data = df[['open', 'high', 'low', 'close', 'volume']].values
     feature_names = ['open', 'high', 'low', 'close', 'volume']
     input_dim = data.shape[1]  # 5 features
