@@ -70,7 +70,7 @@ low: -0.0622
 open: -0.0734  
 
 =================2025.6.25 14:30===============   
-change transformer architecture, reward is better  ![img_1.png](img_1.png)  
+change transformer architecture, predict is better  ![img_1.png](img_1.png)  
 === Analyzing Factor Importance ===  
 Factor Importance (Gradient-based):  
 close: 0.0166  
