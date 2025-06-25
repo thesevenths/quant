@@ -46,7 +46,7 @@ Epoch 49/50, Loss: 0.0004
 Epoch 50/50, Loss: 0.0004  
 
 One of the most important reasons:  
-  **is that the training data is relatively stable, but the test dataset is quite different (the closing price has increased by more than ten times). The model has not learned the price patterns from the training data, or in other words, the training data has over fitted.**
+  **is that the training data is relatively stable, but the test dataset is quite different (the closing price has increased by more than ten times:from 1200 to 20000) from the train data(relatively stable:from 750 to 1200). The model has not learned the price patterns from the training data, or in other words, the training data has over fitted.**
 
 === Analyzing Factor Importance ===  
 
