@@ -70,7 +70,7 @@ low: -0.0622
 open: -0.0734  
 
 =================2025.6.25 14:30===============   
-change transformer architecture, predict is better,but the model's predicted closing price is still a step behind.
+change transformer architecture, predict is better,but the **model's predicted closing price is still a step behind**.
   ![img_1.png](img_1.png)  
 === Analyzing Factor Importance ===  
 Factor Importance (Gradient-based):  
