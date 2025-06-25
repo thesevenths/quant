@@ -68,3 +68,25 @@ volume: -0.0152
 high: -0.0385  
 low: -0.0622  
 open: -0.0734  
+
+=================2025.6.25 14:30===============   
+change transformer architecture, reward is better  ![img_1.png](img_1.png)  
+=== Analyzing Factor Importance ===  
+Factor Importance (Gradient-based):  
+close: 0.0166  
+low: 0.0101  
+volume: 0.0050  
+open: 0.0036  
+high: 0.0030  
+Factor Importance (Permutation Importance):  
+close: 0.0086  
+low: 0.0018  
+high: 0.0009  
+open: 0.0006  
+volume: -0.0008  
+Factor Importance (Feature Ablation):  
+close: 0.0175    
+low: 0.0060  
+open: 0.0021  
+high: -0.0008  
+volume: -0.0136  
