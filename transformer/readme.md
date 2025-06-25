@@ -31,7 +31,7 @@ close: -0.0645
 chang to another dataset lead to a totally different result:  
 ![img1.png](img1.png)  
 predicted close absolutely useless!  
-from loss we can see, it may over fitting!  
+loss is small, but performance is bad!  
 Epoch 1/50, Loss: 0.2788  
 Epoch 2/50, Loss: 0.0044  
 Epoch 3/50, Loss: 0.0008  
@@ -45,6 +45,8 @@ Epoch 48/50, Loss: 0.0004
 Epoch 49/50, Loss: 0.0004  
 Epoch 50/50, Loss: 0.0004  
 
+One of the most important reasons:  
+  **is that the training data is relatively stable, but the test dataset is quite different (the closing price has increased by more than ten times). The model has not learned the price patterns from the training data, or in other words, the training data has over fitted.**
 
 === Analyzing Factor Importance ===  
 
