@@ -1,4 +1,4 @@
-transformer performance is not good enought, need to improve![img.png](img.png)  
+transformer performance is not good enough, need to improve![img.png](img.png)  
 **reason**:  
 **insufficient data**: The data volume is not sufficient; at least 100,000 data points are needed.  
 **data granularity**: The granularity of daily frequency data is too coarse. More detailed data, such as minute-level or order flow data, is required.  

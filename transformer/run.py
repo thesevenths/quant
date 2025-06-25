@@ -11,7 +11,6 @@ import torch.nn as nn
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f'device:{device}')
 
-
 def predict(model, test_loader):
     model.eval()
     predictions = []
@@ -109,7 +108,7 @@ if __name__ == "__main__":
     learning_rate = 0.001
 
     # Load data
-    df = dataset.load_data('btc_daily.csv')
+    df = dataset.load_data('bitcoin_price.csv')
     data = df[['open', 'high', 'low', 'close', 'volume']].values
     feature_names = ['open', 'high', 'low', 'close', 'volume']
     input_dim = data.shape[1]  # 5 features
@@ -141,15 +140,23 @@ if __name__ == "__main__":
     predictions = predict(model, test_loader)
 
     # Inverse transform predictions and targets
-    dummy = np.zeros((len(test_targets), data.shape[1]))
-    dummy[:, 3] = test_targets
-    actual_close = scaler.inverse_transform(dummy)[:, 3]
-    dummy[:, 3] = predictions.squeeze()
-    predicted_close = scaler.inverse_transform(dummy)[:, 3]
+    dummy_test = np.zeros((len(test_targets), data.shape[1]))
+    dummy_test[:, 3] = test_targets
+    actual_close_test = scaler.inverse_transform(dummy_test)[:, 3]
+    dummy_test[:, 3] = predictions.squeeze()
+    predicted_close = scaler.inverse_transform(dummy_test)[:, 3]
+
+    # Inverse transform train targets
+    dummy_train = np.zeros((len(train_targets), data.shape[1]))
+    dummy_train[:, 3] = train_targets
+    actual_close_train = scaler.inverse_transform(dummy_train)[:, 3]
 
     # Plot actual vs predicted close prices
     plt.figure(figsize=(12, 6))
-    plt.plot(df['datetime'].iloc[split_idx + seq_length:], actual_close, label='Actual Close', color='blue')
+    # Plot train data
+    plt.plot(df['datetime'].iloc[:split_idx], actual_close_train, label='Train Actual Close', color='green')
+    # Plot test data
+    plt.plot(df['datetime'].iloc[split_idx + seq_length:], actual_close_test, label='Test Actual Close', color='blue')
     plt.plot(df['datetime'].iloc[split_idx + seq_length:], predicted_close, label='Predicted Close', color='orange')
     plt.xlabel('Date')
     plt.ylabel('Close Price (USD)')
