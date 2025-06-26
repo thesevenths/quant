@@ -48,13 +48,13 @@ class BTCTradingEnv(gym.Env):
                 self.position = 1
         elif action == 2 and self.position == 1:  # Sell
             self.balance = self.holding * current_price
-            reward = (self.balance - self.initial_balance) / self.initial_balance * 100  # Amplify reward
+            reward = (self.balance - self.initial_balance) / self.initial_balance * 100
             self.holding = 0
             self.position = 0
         else:  # Hold penalty
-            reward -= 0.01  # Small penalty to encourage trading
+            reward -= 0.005  # Reduced penalty
         if self.position == 1:
-            reward += (next_price - current_price) / current_price * 10  # Amplify price change
+            reward += (next_price - current_price) / current_price * 20  # Increased price change reward
 
         self.current_step += 1
         done = self.current_step >= self.max_steps or self.balance <= 0

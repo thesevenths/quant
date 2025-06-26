@@ -72,7 +72,7 @@ class TransformerPolicy(ActorCriticPolicy):
         self.nlayers = nlayers
         self.dropout = dropout
         self.max_len = max_len
-        # Override default MLP extractor
+        # Disable default extractors
         self.features_extractor = None
         self.mlp_extractor = None
         self._build_network()
@@ -101,6 +101,14 @@ class TransformerPolicy(ActorCriticPolicy):
         actions = distribution.get_actions(deterministic=deterministic)
         log_prob = distribution.log_prob(actions)
         return actions, value, log_prob
+
+    def get_distribution(self, obs):
+        # Override to use transformer directly
+        if len(obs.shape) == 2:
+            batch_size = obs.shape[0]
+            obs = obs.view(batch_size, -1, self.input_dim)
+        logits, _ = self.transformer(obs)
+        return self.action_dist.proba_distribution(action_logits=logits)
 
     def extract_features(self, obs):
         if len(obs.shape) == 2:

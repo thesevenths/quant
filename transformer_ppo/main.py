@@ -40,9 +40,10 @@ def train(load_model=False):
             verbose=1,
             device=device,
             ent_coef=0.01,
-            learning_rate=0.001
+            learning_rate=0.001,
+            vf_coef=0.75
         )
-        model.learn(total_timesteps=400000)
+        model.learn(total_timesteps=600000)
         model.save(model_path)
         logging.info(f"Saved model to {model_path}")
         logging.info("Model structure: %s", model.policy)
@@ -65,8 +66,8 @@ def train(load_model=False):
         episode_reward += reward[0]
         step += 1
 
-        # Log data for plotting
-        env_unwrapped = env.envs[0]
+        # Log data for plotting (access underlying BTCTradingEnv)
+        env_unwrapped = env.envs[0].env  # Unwrap Monitor to get BTCTradingEnv
         log_data['steps'].append(step)
         log_data['rewards'].append(reward[0])
         log_data['prices'].append(env_unwrapped.df['close'].iloc[env_unwrapped.current_step])
