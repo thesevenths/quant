@@ -24,7 +24,7 @@ class PositionalEncoding(nn.Module):
         return x + self.pe[:, :seq_len]
 
 class BTCTransformer(nn.Module):
-    def __init__(self, input_dim=5, d_model=64, nhead=4, nlayers=2, action_dim=3, dropout=0.1, max_len=5000):
+    def __init__(self, input_dim=5, d_model=32, nhead=4, nlayers=1, action_dim=3, dropout=0.1, max_len=5000):
         super().__init__()
         self.input_proj = nn.Sequential(
             nn.Linear(input_dim, d_model),
@@ -64,17 +64,17 @@ class BTCTransformer(nn.Module):
         return logits, value
 
 class TransformerPolicy(ActorCriticPolicy):
-    def __init__(self, observation_space, action_space, lr_schedule, input_dim=5, d_model=64, nhead=4, nlayers=2, dropout=0.1, max_len=5000, **kwargs):
-        super().__init__(observation_space, action_space, lr_schedule, **kwargs)
+    def __init__(self, observation_space, action_space, lr_schedule, input_dim=5, d_model=32, nhead=4, nlayers=1, dropout=0.1, max_len=5000, **kwargs):
+        super().__init__(observation_space, action_space, lr_schedule, ortho_init=False, **kwargs)
         self.input_dim = input_dim
         self.d_model = d_model
         self.nhead = nhead
         self.nlayers = nlayers
         self.dropout = dropout
         self.max_len = max_len
-        self.ortho_init = False
-        self.net_arch = []
-        self.activation_fn = nn.Identity
+        # Override default MLP extractor
+        self.features_extractor = None
+        self.mlp_extractor = None
         self._build_network()
 
     def _build_network(self):

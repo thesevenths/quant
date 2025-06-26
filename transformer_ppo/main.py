@@ -27,9 +27,9 @@ def train(load_model=False):
     else:
         policy_kwargs = {
             'input_dim': 5,
-            'd_model': 32,  # Reduced for small dataset
+            'd_model': 32,
             'nhead': 4,
-            'nlayers': 1,   # Reduced for small dataset
+            'nlayers': 1,
             'dropout': 0.1,
             'max_len': 5000
         }
@@ -39,7 +39,8 @@ def train(load_model=False):
             policy_kwargs=policy_kwargs,
             verbose=1,
             device=device,
-            ent_coef=0.01  # Encourage exploration
+            ent_coef=0.01,
+            learning_rate=0.001
         )
         model.learn(total_timesteps=400000)
         model.save(model_path)
@@ -48,31 +49,37 @@ def train(load_model=False):
         logging.info("Total parameters: %d", sum(p.numel() for p in model.policy.parameters()))
 
     # Evaluate and collect data for plotting
-    log_data = {'steps': [], 'rewards': [], 'prices': []}
+    log_data = {'steps': [], 'rewards': [], 'prices': [], 'actions': []}
     step = 0
-    max_steps = 20000  # Longer evaluation for better plotting
+    max_steps = 20000
     obs = env.reset()
     episode_rewards = []
     episode_reward = 0
+    action_counts = {0: 0, 1: 0, 2: 0}
 
     while step < max_steps:
         action, _ = model.predict(obs, deterministic=False)
-        obs, reward, done, info = env.step(action)
-        episode_reward += reward[0]  # reward is a numpy array from VecEnv
+        action = action[0]  # VecEnv returns array
+        action_counts[action] += 1
+        obs, reward, done, info = env.step([action])
+        episode_reward += reward[0]
         step += 1
 
-        # Log data for plotting (access first environment for price)
+        # Log data for plotting
         env_unwrapped = env.envs[0]
         log_data['steps'].append(step)
         log_data['rewards'].append(reward[0])
         log_data['prices'].append(env_unwrapped.df['close'].iloc[env_unwrapped.current_step])
+        log_data['actions'].append(action)
 
         if done[0] or info[0].get('TimeLimit.truncated', False):
             episode_rewards.append(episode_reward)
             log_metrics(step, episode_rewards, env_unwrapped.balance)
             logging.info(f"Step {step}, Episode Reward: {episode_reward:.4f}, Balance: {env_unwrapped.balance:.2f}")
+            logging.info(f"Action distribution: {action_counts}")
             episode_rewards = []
             episode_reward = 0
+            action_counts = {0: 0, 1: 0, 2: 0}
             obs = env.reset()
 
     # Save log data for plotting
