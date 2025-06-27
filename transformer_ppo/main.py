@@ -9,6 +9,7 @@ from env import make_env
 from model import TransformerPolicy
 from utils import log_metrics
 
+
 def train(load_model=False):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -87,6 +88,7 @@ def train(load_model=False):
     log_df = pd.DataFrame(log_data)
     log_df.to_csv('training_log_data.csv', index=False)
     logging.info("Saved training log data to training_log_data.csv")
+
 
 if __name__ == "__main__":
     train(load_model=os.path.exists('ppo_trading1.zip'))

@@ -4,9 +4,11 @@ import torch.nn as nn
 from stable_baselines3.common.policies import ActorCriticPolicy
 from stable_baselines3.common.distributions import CategoricalDistribution
 
+
 def get_causal_mask(seq_len, device):
     mask = torch.triu(torch.ones(seq_len, seq_len, device=device), diagonal=1).bool()
     return mask
+
 
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=5000):
@@ -23,6 +25,7 @@ class PositionalEncoding(nn.Module):
         seq_len = x.size(1)
         return x + self.pe[:, :seq_len]
 
+
 class BTCTransformer(nn.Module):
     def __init__(self, input_dim=5, d_model=32, nhead=4, nlayers=1, action_dim=3, dropout=0.1, max_len=5000):
         super().__init__()
@@ -34,7 +37,7 @@ class BTCTransformer(nn.Module):
         )
         self.pos_encoder = PositionalEncoding(d_model, max_len)
 
-        encoder_layer = nn.TransformerEncoderLayer(
+        encoder_layer = nn.TransformerEncoderLayer(  # 单个transformer block的结构
             d_model=d_model,
             nhead=nhead,
             dim_feedforward=d_model * 4,
@@ -42,14 +45,14 @@ class BTCTransformer(nn.Module):
             activation='gelu',
             batch_first=True
         )
-        self.transformer_encoder = nn.TransformerEncoder(
+        self.transformer_encoder = nn.TransformerEncoder(  # transformer block个数
             encoder_layer,
             num_layers=nlayers,
             norm=nn.LayerNorm(d_model)
         )
 
-        self.action_head = nn.Linear(d_model, action_dim)
-        self.value_head = nn.Linear(d_model, 1)
+        self.action_head = nn.Linear(d_model, action_dim)  # action output
+        self.value_head = nn.Linear(d_model, 1)  # critical output
 
     def forward(self, x):
         # x: (batch, seq_len, input_dim)
@@ -61,10 +64,12 @@ class BTCTransformer(nn.Module):
         x = x[:, -1, :]  # Take the last timestep's features: (batch, d_model)
         logits = self.action_head(x)  # (batch, action_dim)
         value = self.value_head(x).squeeze(-1)  # (batch,)
-        return logits, value
+        return logits, value  # actor和critical共享底层网络（主要是提取state信息），在head这里分叉
+
 
 class TransformerPolicy(ActorCriticPolicy):
-    def __init__(self, observation_space, action_space, lr_schedule, input_dim=5, d_model=32, nhead=4, nlayers=1, dropout=0.1, max_len=5000, **kwargs):
+    def __init__(self, observation_space, action_space, lr_schedule, input_dim=5, d_model=32, nhead=4, nlayers=1,
+                 dropout=0.1, max_len=5000, **kwargs):
         super().__init__(observation_space, action_space, lr_schedule, ortho_init=False, **kwargs)
         self.input_dim = input_dim
         self.d_model = d_model
@@ -123,13 +128,13 @@ class TransformerPolicy(ActorCriticPolicy):
             obs = obs.view(batch_size, -1, self.input_dim)
         logits, values = self.transformer(obs)
         distribution = self.action_dist.proba_distribution(action_logits=logits)
-        log_prob = distribution.log_prob(actions)
-        entropy = distribution.entropy()
-        return values, log_prob, entropy
+        log_prob = distribution.log_prob(actions)  # 计算new/old policy ratio，更新policy gradient
+        entropy = distribution.entropy() # 高entropy高exploration，加入loss防止policy过早收敛
+        return values, log_prob, entropy #
 
     def predict_values(self, obs):
         if len(obs.shape) == 2:
             batch_size = obs.shape[0]
             obs = obs.view(batch_size, -1, self.input_dim)
-        _, values = self.transformer(obs)
+        _, values = self.transformer(obs)  # 用于更新critical net
         return values
