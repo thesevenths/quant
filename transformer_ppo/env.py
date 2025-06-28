@@ -4,6 +4,10 @@ import pandas as pd
 from gymnasium.spaces import Box, Discrete
 import pandas_ta as ta
 
+# Set Pandas option to opt-in to future behavior
+pd.set_option('future.no_silent_downcasting', True)
+
+
 class BTCTradingEnv(gym.Env):
     def __init__(self, data_path='btc_daily.csv', seq_len=10, initial_balance=10000000): # initial_balance必须比close price大， 否则无法买入
         super().__init__()
@@ -18,11 +22,12 @@ class BTCTradingEnv(gym.Env):
         self.max_steps = len(self.df) - seq_len - 1  # 确保不越界
         self.buy_price = 0  # 记录买入价格
 
-        # [MODIFIED] 添加技术指标：RSI 和 20 日移动平均线
+        # Add technical indicators
         self.df['rsi'] = ta.rsi(self.df['close'], length=14)
         self.df['sma20'] = ta.sma(self.df['close'], length=20)
-        self.df = self.df.fillna(0)  # 填充 NaN 值
-        self.features = self.df[['open', 'high', 'low', 'close', 'volume', 'rsi', 'sma20']].values
+        numerical_cols = ['open', 'high', 'low', 'close', 'volume', 'rsi', 'sma20']
+        self.df[numerical_cols] = self.df[numerical_cols].fillna(0).infer_objects(copy=False)
+        self.features = self.df[numerical_cols].values
         self.features = (self.features - self.features.mean(axis=0)) / (self.features.std(axis=0) + 1e-8)
 
         # [MODIFIED] 更新观察空间维度，匹配新增特征
@@ -48,7 +53,10 @@ class BTCTradingEnv(gym.Env):
 
     def step(self, action):
         current_price = self.df['close'].iloc[self.current_step]
-        next_price = self.df['close'].iloc[self.current_step + 1]
+        # [MODIFIED] Safe access to next price
+        next_price = current_price
+        if self.current_step + 1 < len(self.df):
+            next_price = self.df['close'].iloc[self.current_step + 1]
 
         reward = 0
         # [NEW] 交易成本（假设 0.1% 手续费）
@@ -112,7 +120,9 @@ class BTCTradingEnv(gym.Env):
         done = self.current_step >= self.max_steps or self.balance < 0 # 不能等于0，否则全仓买入episode就结束了
         truncated = False
 
-        return self._get_observation(), reward, done, truncated, {}  # 下一步观测值
+        # [MODIFIED] Return holding in info
+        info = {'holding': self.holding}
+        return self._get_observation(), reward, done, truncated, info
 
     def render(self):
         print(f"Step: {self.current_step}, Balance: {self.balance:.2f}, Holding: {self.holding:.4f} BTC")

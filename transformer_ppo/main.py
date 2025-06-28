@@ -15,6 +15,23 @@ import sys
 os.chdir(sys.path[0])
 print("Current working directory:", os.getcwd())
 
+def calculate_max_drawdown(values):
+    max_drawdown = 0.0
+    peak = values[0]
+    peak_idx = 0
+    trough_idx = 0
+    for i, value in enumerate(values):
+        if value > peak:
+            peak = value
+            peak_idx = i
+        else:
+            drawdown = (peak - value) / peak
+            if drawdown > max_drawdown:
+                max_drawdown = drawdown
+                trough_idx = i
+    return max_drawdown, peak_idx, trough_idx
+
+
 def train(load_model=False):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -56,44 +73,92 @@ def train(load_model=False):
         logging.info("Model structure: %s", model.policy)
         logging.info("Total parameters: %d", sum(p.numel() for p in model.policy.parameters()))
 
-    # Evaluate and collect data for plotting
-    log_data = {'steps': [], 'rewards': [], 'prices': [], 'actions': []}
-    step = 0
-    max_steps = 20000
-    obs = env.reset()
+   # Evaluate on last 20%, one day at a time
+    df = pd.read_csv(data_path)
+    total_rows = len(df)
+    eval_start_idx = int(total_rows * 0.8)
+    eval_df = df.iloc[eval_start_idx:].reset_index(drop=True)
+    eval_data_path = "btc_eval_data.csv"
+    eval_df.to_csv(eval_data_path, index=False)
+    
+    log_data = {
+        'steps': [], 'rewards': [], 'prices': [], 'actions': [],
+        'balance': [], 'holding': [], 'total_asset_value': [], 'datetime': []
+    }
+    global_step = 0
     episode_rewards = []
-    episode_reward = 0
     action_counts = {0: 0, 1: 0, 2: 0}
+    total_asset_values = []
 
-    while step < max_steps:
-        action, _ = model.predict(obs, deterministic=True) # 评估的时候不需要exploration，直接选argmax  greedy
-        action = action[0]  # VecEnv returns array
-        action_counts[action] += 1
-        obs, reward, done, info = env.step([action])
-        episode_reward += reward[0]
-        step += 1
-
-        # Log data for plotting (access underlying BTCTradingEnv)
-        env_unwrapped = env.envs[0].env  # Unwrap Monitor to get BTCTradingEnv
-        log_data['steps'].append(step)
-        log_data['rewards'].append(reward[0])
-        log_data['prices'].append(env_unwrapped.df['close'].iloc[env_unwrapped.current_step])
-        log_data['actions'].append(action)
-
-        if done[0] or info[0].get('TimeLimit.truncated', False):
-            episode_rewards.append(episode_reward)
-            log_metrics(step, episode_rewards, env_unwrapped.balance)
-            logging.info(f"Step {step}, Episode Reward: {episode_reward:.4f}, Balance: {env_unwrapped.balance:.2f}")
-            logging.info(f"Action distribution: {action_counts}")
-            episode_rewards = []
+    try:
+        for day_start in range(seq_len + 1, len(eval_df)):
+            day_df = eval_df.iloc[:day_start].reset_index(drop=True)
+            day_data_path = f"btc_eval_day_{day_start}.csv"
+            day_df.to_csv(day_data_path, index=False)
+            eval_env = make_vec_env(make_env, n_envs=1, env_kwargs={'data_path': day_data_path, 'seq_len': seq_len})
+            
+            obs = eval_env.reset()
+            done = False
             episode_reward = 0
-            action_counts = {0: 0, 1: 0, 2: 0}
-            obs = env.reset()
+            step = 0
+            max_steps = 1
 
-    # Save log data for plotting
+            while step < max_steps and not done:
+                action, _ = model.predict(obs, deterministic=True)
+                action = action[0]
+                action_counts[action] += 1
+                obs, reward, done, info = eval_env.step([action])
+                episode_reward += reward[0]
+                step += 1
+                global_step += 1
+
+                env_unwrapped = eval_env.envs[0].env
+                current_price = env_unwrapped.df['close'].iloc[env_unwrapped.current_step]
+                holding = info[0].get('holding', 0)  # [MODIFIED] Safely get holding
+                total_asset_value = env_unwrapped.balance + holding * current_price
+                total_asset_values.append(total_asset_value)
+
+                log_data['steps'].append(global_step)
+                log_data['rewards'].append(reward[0])
+                log_data['prices'].append(current_price)
+                log_data['actions'].append(action)
+                log_data['balance'].append(env_unwrapped.balance)
+                log_data['holding'].append(holding)
+                log_data['total_asset_value'].append(total_asset_value)
+                log_data['datetime'].append(env_unwrapped.df['datetime'].iloc[env_unwrapped.current_step])
+
+            episode_rewards.append(episode_reward)
+            log_metrics(global_step, episode_rewards, env_unwrapped.balance)
+            logging.info(f"Day {day_start}, Step {global_step}, Episode Reward: {episode_reward:.4f}, "
+                        f"Balance: {env_unwrapped.balance:.2f}, Holding: {holding:.4f}, "
+                        f"Total Asset Value: {total_asset_value:.2f}")
+            logging.info(f"Action distribution: {action_counts}")
+            action_counts = {0: 0, 1: 0, 2: 0}
+            
+            if os.path.exists(day_data_path):
+                os.remove(day_data_path)
+
+    except Exception as e:
+        logging.error(f"Evaluation failed: {e}")
+        # Save partial log data
+        log_df = pd.DataFrame(log_data)
+        log_df.to_csv('eval_log_data.csv', index=False)
+        logging.info("Saved partial evaluation log data to eval_log_data.csv")
+        raise
+
+    # Calculate max drawdown for total asset value
+    if total_asset_values:
+        max_drawdown, peak_idx, trough_idx = calculate_max_drawdown(total_asset_values)
+        logging.info(f"Max Drawdown: {max_drawdown * 100:.2f}%")
+        log_data['max_drawdown'] = [max_drawdown] * len(log_data['steps'])
+        log_data['peak_idx'] = [peak_idx] * len(log_data['steps'])
+        log_data['trough_idx'] = [trough_idx] * len(log_data['steps'])
+
     log_df = pd.DataFrame(log_data)
-    log_df.to_csv('training_log_data.csv', index=False)
-    logging.info("Saved training log data to training_log_data.csv")
+    log_df.to_csv('eval_log_data.csv', index=False)
+    logging.info("Saved evaluation log data to eval_log_data.csv")
+    return log_df
+
 
 
 if __name__ == "__main__":
