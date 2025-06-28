@@ -9,6 +9,11 @@ from env import make_env
 from model import TransformerPolicy
 from utils import log_metrics
 
+import os
+import sys
+# 切换到当前脚本所在目录
+os.chdir(sys.path[0])
+print("Current working directory:", os.getcwd())
 
 def train(load_model=False):
     # Configure logging
@@ -60,7 +65,7 @@ def train(load_model=False):
     action_counts = {0: 0, 1: 0, 2: 0}
 
     while step < max_steps:
-        action, _ = model.predict(obs, deterministic=False)
+        action, _ = model.predict(obs, deterministic=True) # 评估的时候不需要exploration，直接选argmax  greedy
         action = action[0]  # VecEnv returns array
         action_counts[action] += 1
         obs, reward, done, info = env.step([action])
