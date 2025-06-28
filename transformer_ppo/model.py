@@ -27,7 +27,7 @@ class PositionalEncoding(nn.Module):
 
 
 class BTCTransformer(nn.Module):
-    def __init__(self, input_dim=5, d_model=32, nhead=4, nlayers=1, action_dim=3, dropout=0.1, max_len=5000):
+    def __init__(self, input_dim=7, d_model=32, nhead=4, nlayers=1, action_dim=3, dropout=0.1, max_len=5000):
         super().__init__()
         self.input_proj = nn.Sequential(
             nn.Linear(input_dim, d_model),

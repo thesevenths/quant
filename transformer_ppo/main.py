@@ -32,7 +32,7 @@ def train(load_model=False):
         logging.info(f"Loaded model from {model_path}")
     else:
         policy_kwargs = {
-            'input_dim': 5,
+            'input_dim': 7, # [MODIFIED] 匹配新特征维度（增加了 RSI 和 SMA）
             'd_model': 32,
             'nhead': 4,
             'nlayers': 1,
@@ -45,9 +45,10 @@ def train(load_model=False):
             policy_kwargs=policy_kwargs,
             verbose=1,
             device=device,
-            ent_coef=0.01,
-            learning_rate=0.001,
-            vf_coef=0.75
+            ent_coef=0.1,  # [MODIFIED] 增加熵系数以鼓励探索
+            learning_rate=0.0003,  # [MODIFIED] 降低学习率以提高稳定性
+            vf_coef=1.0,  # [MODIFIED] 增加value loss权重以改善拟合
+            n_steps=4096,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
         )
         model.learn(total_timesteps=600000)
         model.save(model_path)

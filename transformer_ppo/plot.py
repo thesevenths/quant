@@ -2,6 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+import os
+import sys
+# 切换到当前脚本所在目录
+os.chdir(sys.path[0])
+
 def plot_btc_rewards(log_file='training_log_data.csv', output_file='btc_reward_plot.png'):
     # Load logged data
     df = pd.read_csv(log_file)
