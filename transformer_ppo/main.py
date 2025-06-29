@@ -62,9 +62,9 @@ def train(load_model=False):
             policy_kwargs=policy_kwargs,
             verbose=1,
             device=device,
-            ent_coef=0.1,  # [MODIFIED] 增加熵系数以鼓励探索
+            ent_coef=0.15,  # [MODIFIED] 增加熵系数以鼓励探索
             learning_rate=0.0003,  # [MODIFIED] 降低学习率以提高稳定性
-            vf_coef=1.0,  # [MODIFIED] 增加value loss权重以改善拟合
+            vf_coef=2.5,  # [MODIFIED] 增加value loss权重以改善拟合
             n_steps=4096,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
         )
         model.learn(total_timesteps=600000)
@@ -91,21 +91,34 @@ def train(load_model=False):
     total_asset_values = []
 
     try:
+        eval_env = make_vec_env(make_env, n_envs=1, env_kwargs={'data_path': 'btc_daily.csv', 'seq_len': seq_len})
+        obs = eval_env.reset()
+
         for day_start in range(seq_len + 1, len(eval_df)):
-            day_df = eval_df.iloc[:day_start].reset_index(drop=True)
+            # day_df = eval_df.iloc[:day_start].reset_index(drop=True)
+            day_df = eval_df.iloc[day_start - seq_len - 1 : day_start].reset_index(drop=True)
             day_data_path = f"btc_eval_day_{day_start}.csv"
             day_df.to_csv(day_data_path, index=False)
-            eval_env = make_vec_env(make_env, n_envs=1, env_kwargs={'data_path': day_data_path, 'seq_len': seq_len})
-            
-            obs = eval_env.reset()
+            # 根据新数据集跟新obs
+            obs = eval_env.envs[0].env.set_observation_window(day_df)
+
             done = False
             episode_reward = 0
             step = 0
             max_steps = 1
 
             while step < max_steps and not done:
-                action, _ = model.predict(obs, deterministic=True)
-                action = action[0]
+                obs_tensor = torch.tensor(obs, dtype=torch.float32)
+                action, _ = model.predict(obs_tensor, deterministic=True)  # 返回 (actions, value, log_prob)
+                
+                # 调试输出
+                print(f"action type: {type(action)}, action shape: {action.shape if hasattr(action, 'shape') else 'scalar'}")
+                
+                # 确保 action 是数组
+                if not hasattr(action, '__len__') or len(action.shape) == 0:
+                    action = action.item()  # 转换为单元素列表
+                else:
+                    action = action[0] if action.shape[0] == 1 else action  # 取第一个动作
                 action_counts[action] += 1
                 obs, reward, done, info = eval_env.step([action])
                 episode_reward += reward[0]
@@ -113,6 +126,11 @@ def train(load_model=False):
                 global_step += 1
 
                 env_unwrapped = eval_env.envs[0].env
+                # 验证 current_step 是否有效;如果 current_step 越界，则重置为 len(env_unwrapped.df) - 1（最后一行的索引）。
+                if env_unwrapped.current_step >= len(env_unwrapped.df):
+                    print(f"Warning: current_step {env_unwrapped.current_step} out of bounds, resetting to {len(env_unwrapped.df) - 1}")
+                    env_unwrapped.current_step = len(env_unwrapped.df) - 1      
+
                 current_price = env_unwrapped.df['close'].iloc[env_unwrapped.current_step]
                 holding = info[0].get('holding', 0)  # [MODIFIED] Safely get holding
                 total_asset_value = env_unwrapped.balance + holding * current_price

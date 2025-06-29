@@ -39,6 +39,40 @@ class BTCTradingEnv(gym.Env):
         # [NEW] 用于奖励平滑的缓冲区
         self.reward_buffer = []
 
+    # def set_observation_window(self, day_df):
+    #     self.df = day_df
+    #     self.current_step = self.seq_len  # 重置到窗口起点
+        
+    #     # 重新计算 features 基于新的 self.df
+    #     numerical_cols = ['open', 'high', 'low', 'close', 'volume', 'rsi', 'sma20']
+    #     self.df[numerical_cols] = self.df[numerical_cols].fillna(0).infer_objects(copy=False)
+    #     self.features = self.df[numerical_cols].values
+    #     self.features = (self.features - self.features.mean(axis=0)) / (self.features.std(axis=0) + 1e-8)
+        
+    #     self.observation = self._get_observation()  # 更新观察
+    #     return self.observation
+
+    def set_observation_window(self, day_df):
+        self.df = day_df
+        self.current_step = self.seq_len  # 重置到窗口起点
+        
+        # 重新计算技术指标
+        self.df['rsi'] = ta.rsi(self.df['close'], length=14)
+        self.df['sma20'] = ta.sma(self.df['close'], length=20)
+        
+        # 处理不足长度的窗口
+        self.df['rsi'] = self.df['rsi'].fillna(0)
+        self.df['sma20'] = self.df['sma20'].fillna(0)
+        
+        # 重新计算 features
+        numerical_cols = ['open', 'high', 'low', 'close', 'volume', 'rsi', 'sma20']
+        self.df[numerical_cols] = self.df[numerical_cols].fillna(0).infer_objects(copy=False)
+        self.features = self.df[numerical_cols].values
+        self.features = (self.features - self.features.mean(axis=0)) / (self.features.std(axis=0) + 1e-8)
+        
+        self.observation = self._get_observation()  # 更新观察
+        return self.observation
+
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
         self.current_step = self.seq_len
@@ -49,7 +83,7 @@ class BTCTradingEnv(gym.Env):
         return self._get_observation(), {}
 
     def _get_observation(self):  # 最近seq_len步的历史数据
-        return self.features[self.current_step - self.seq_len:self.current_step]
+        return self.features[self.current_step - self.seq_len:self.current_step].astype('float32')
 
     def step(self, action):
         current_price = self.df['close'].iloc[self.current_step]
@@ -128,5 +162,5 @@ class BTCTradingEnv(gym.Env):
         print(f"Step: {self.current_step}, Balance: {self.balance:.2f}, Holding: {self.holding:.4f} BTC")
 
 
-def make_env(data_path='btc_daily.csv', seq_len=10):
-    return BTCTradingEnv(data_path, seq_len)
+def make_env(data_path='btc_daily.csv', seq_len=10, initial_balance=10000000):
+    return BTCTradingEnv(data_path, seq_len=10, initial_balance=10000000)

@@ -104,6 +104,9 @@ class TransformerPolicy(ActorCriticPolicy):
         logits, value = self.transformer(obs)
         distribution = self.action_dist.proba_distribution(action_logits=logits)
         actions = distribution.get_actions(deterministic=deterministic)
+        # Ensure actions is at least 1D, even for batch_size=1
+        if actions.dim() == 0:
+            actions = actions.unsqueeze(0)  # Add batch dimension if scalar
         log_prob = distribution.log_prob(actions)
         return actions, value, log_prob
 
