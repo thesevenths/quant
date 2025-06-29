@@ -1,8 +1,6 @@
 transformer + ppo to train a model, trading btc!  
 ![btc_eval_plot.png](btc_eval_plot.png)   
 max Drawdown：17%  
-
-
 | steps | rewards      | prices   | actions | balance            | holding            | total_asset_value  | datetime  | max_drawdown        | peak_idx | trough_idx |
 |-------|--------------|----------|---------|--------------------|--------------------|--------------------|-----------|---------------------|----------|------------|
 | 1     | -0.1         | 24327.98 | 1       | 0                  | 411.04933496328096 | 10000000           | 2023/2/15 | 0.17138083816700628 | 79       | 23         |
@@ -94,3 +92,11 @@ max Drawdown：17%
 | 87    | 0.80469525   | 26795.01 | 1       | 0                  | 438.31548200858055 | 11744667.723574735 | 2023/5/12 | 0.17138083816700628 | 79       | 23         |
 | 88    | 0.80469525   | 26775.27 | 1       | 0                  | 438.31548200858055 | 11736015.375959886 | 2023/5/13 | 0.17138083816700628 | 79       | 23         |
 | 89    | 0.80469525   | 26917.62 | 1       | 0                  | 438.31548200858055 | 11798409.584823808 | 2023/5/14 | 0.17138083816700628 | 79       | 23         |
+
+理想情况是：第二天上涨时头天买入，第二天下跌时头天卖出，能保持净值一直上涨！但回测时最大回撤高达17%，btc price涨了净值涨，跌了净值跟着跌，说明模型对趋势的预测还不完美；  
+btc这种虚拟货币主要依靠各国政府的政策和市场共识影响价格，单存使用open、high、low、close、volume、rsi、sma等技术指标预测并不十分靠谱，更重要的还是要收集虚拟货币的各种新闻消息，判断这些信息对虚拟货币的正负面影响！
+下一步的做法：爬虫收集各种信息，用GRPO等方式微调LLM，让LLM根据当前的各种政策、消息、市场参与者的言论、open、high、low、close、volume、rsi、sma等一起共同预测btc price，而不是单存依赖交易的技术指标！
+
+The ideal scenario would be to buy the day before the price goes up and sell the day before it goes down so that the net value keeps rising. However, during backtesting, the maximum drawdown was as high as 17%. When the BTC price went up, the net value rose, and when the BTC price fell, the net value also declined. This indicates that the model's trend prediction is still not perfect.
+BTC, as a virtual currency, mainly relies on the policies of various countries and market consensus to influence its price. Relying solely on technical indicators such as open, high, low, close, volume, RSI, and SMA for prediction is not very reliable. It is more important to collect various news about virtual currencies and assess the positive or negative impact of this information on the virtual currency.
+The next step is to use web crawlers to collect various pieces of information and fine-tune the LLM with methods like GRPO. This way, the LLM can predict the BTC price based on a combination of current policies, news, market participants' comments, open, high, low, close, volume, RSI, and SMA, instead of relying solely on trading technical indicators.
