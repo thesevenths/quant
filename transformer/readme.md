@@ -101,5 +101,5 @@ high: -0.0008
 volume: -0.0136  
 
  **总结： **  
-  训练数据较为平稳，但测试数据波动非常大，导致预测效果非常差；股票预测还能用基本面做因子，加密货币纯粹靠各国政府的政策和市场的情绪、共识等，下一步需要开发爬虫事实爬取数据，然后分析政策、情绪和共识  
+  训练数据较为平稳，但测试数据波动非常大，导致预测效果非常差(noise太大，直接作为时序预测不合适)；股票预测还能用基本面做因子，加密货币纯粹靠各国政府的政策和市场的情绪、共识等，下一步需要开发爬虫事实爬取数据，然后分析政策、情绪和共识  
   The training data is relatively stable, but the test data fluctuates significantly, resulting in very poor prediction outcomes. In stock forecasting, fundamental factors can be used as indicators, but for cryptocurrencies, it is purely based on government policies in various countries and market sentiment and consensus. The next step is to develop web crawlers to collect real-time data and then analyze policies, sentiment, and consensus.
