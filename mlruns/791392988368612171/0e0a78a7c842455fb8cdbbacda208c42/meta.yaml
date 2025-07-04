@@ -1,0 +1,15 @@
+artifact_uri: file:E:\AI_quant\mlruns/791392988368612171/0e0a78a7c842455fb8cdbbacda208c42/artifacts
+end_time: 1750212325422
+entry_point_name: ''
+experiment_id: '791392988368612171'
+lifecycle_stage: active
+run_id: 0e0a78a7c842455fb8cdbbacda208c42
+run_name: mlflow_recorder
+run_uuid: 0e0a78a7c842455fb8cdbbacda208c42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750212320922
+status: 4
+tags: []
+user_id: safe
