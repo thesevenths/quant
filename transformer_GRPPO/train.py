@@ -72,9 +72,9 @@ def format_input(open_price, low_price, high_price, volume):
         - inference/reasoning step by step
 
         ## OutputFormat
-        - <think>....here to show your reasoning process....</think> [number]
-        - between the <think> </think>, show users your reasoning process, which indicate how to predict the close price
-        - after the think label </think> is the close price, which should be only one number ,no other characters,so that i can easily extract the final close price
+        - - <think>....</think> [digital number]
+        - between the 2 <think> .... </think> label, show users your reasoning process, which indicate how to predict the close price
+        - after the </think> label is the final answer, which should be only one number , no other characters, so that i can easily extract the close price
     '''
 
 
