@@ -50,9 +50,9 @@ def train(load_model=False):
     else:
         policy_kwargs = {
             'input_dim': 7, # [MODIFIED] 匹配新特征维度（增加了 RSI 和 SMA）
-            'd_model': 32,
+            'd_model': 64,
             'nhead': 4,
-            'nlayers': 1,
+            'nlayers': 2,
             'dropout': 0.1,
             'max_len': 5000,
             'optimizer_kwargs': {
@@ -68,7 +68,7 @@ def train(load_model=False):
             ent_coef=0.15,  # [MODIFIED] 增加熵系数以鼓励探索
             learning_rate=0.0003,  # [MODIFIED] 降低学习率以提高稳定性
             vf_coef=2.5,  # [MODIFIED] 增加value loss权重以改善拟合
-            n_steps=4096,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
+            n_steps=2048,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
         )
         model.learn(total_timesteps=600000)
         model.save(model_path)
