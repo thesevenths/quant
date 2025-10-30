@@ -42,7 +42,7 @@ def train(load_model=False):
     env = make_vec_env(make_env, n_envs=1, env_kwargs={'data_path': data_path, 'seq_len': seq_len})
 
     # Check model existence and load or train
-    model_path = 'ppo_trading1.zip'
+    model_path = 'ppo_trading2.zip'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if load_model and os.path.exists(model_path):
         model = PPO.load(model_path, env=env, device=device)
@@ -54,7 +54,10 @@ def train(load_model=False):
             'nhead': 4,
             'nlayers': 1,
             'dropout': 0.1,
-            'max_len': 5000
+            'max_len': 5000,
+            'optimizer_kwargs': {
+                'weight_decay': 1e-4
+            }
         }
         model = PPO(
             policy=TransformerPolicy,
@@ -180,4 +183,4 @@ def train(load_model=False):
 
 
 if __name__ == "__main__":
-    train(load_model=os.path.exists('ppo_trading1.zip'))
+    train(load_model=os.path.exists('ppo_trading2.zip'))
