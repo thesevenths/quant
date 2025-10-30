@@ -1,0 +1,1057 @@
+Step 1: Mean Reward = -0.1000, Balance = 10000000.00
+Step 2: Mean Reward = -0.1000, Balance = 10000000.00
+Step 3: Mean Reward = -0.0667, Balance = 10000000.00
+Step 4: Mean Reward = -0.0500, Balance = 10000000.00
+Step 5: Mean Reward = -0.0400, Balance = 10000000.00
+Step 6: Mean Reward = -0.0333, Balance = 10000000.00
+Step 7: Mean Reward = -0.0314, Balance = 10000000.00
+Step 8: Mean Reward = -0.0300, Balance = 10000000.00
+Step 9: Mean Reward = -0.0378, Balance = 10000000.00
+Step 10: Mean Reward = -0.0440, Balance = 10000000.00
+Step 11: Mean Reward = -0.0491, Balance = 10000000.00
+Step 12: Mean Reward = -0.0533, Balance = 10000000.00
+Step 13: Mean Reward = -0.0569, Balance = 10000000.00
+Step 14: Mean Reward = -0.0600, Balance = 10000000.00
+Step 15: Mean Reward = -0.0627, Balance = 10000000.00
+Step 16: Mean Reward = -0.0650, Balance = 10000000.00
+Step 17: Mean Reward = -0.0671, Balance = 10000000.00
+Step 18: Mean Reward = -0.0689, Balance = 10000000.00
+Step 19: Mean Reward = -0.0705, Balance = 10000000.00
+Step 20: Mean Reward = -0.0720, Balance = 10000000.00
+Step 21: Mean Reward = -0.0733, Balance = 10000000.00
+Step 22: Mean Reward = -0.0745, Balance = 10000000.00
+Step 23: Mean Reward = -0.0757, Balance = 10000000.00
+Step 24: Mean Reward = -0.0767, Balance = 10000000.00
+Step 25: Mean Reward = -0.0776, Balance = 10000000.00
+Step 26: Mean Reward = -0.0785, Balance = 10000000.00
+Step 27: Mean Reward = -0.0793, Balance = 10000000.00
+Step 28: Mean Reward = -0.0764, Balance = 10000000.00
+Step 29: Mean Reward = -0.0738, Balance = 10000000.00
+Step 30: Mean Reward = -0.0713, Balance = 10000000.00
+Step 31: Mean Reward = -0.0697, Balance = 10000000.00
+Step 32: Mean Reward = -0.0675, Balance = 10000000.00
+Step 33: Mean Reward = -0.0661, Balance = 10000000.00
+Step 34: Mean Reward = -0.0641, Balance = 10000000.00
+Step 35: Mean Reward = -0.0651, Balance = 10000000.00
+Step 36: Mean Reward = -0.0633, Balance = 10000000.00
+Step 37: Mean Reward = -0.0616, Balance = 10000000.00
+Step 38: Mean Reward = -0.0600, Balance = 10000000.00
+Step 39: Mean Reward = -0.0590, Balance = 10000000.00
+Step 40: Mean Reward = -0.0600, Balance = 10000000.00
+Step 41: Mean Reward = -0.0585, Balance = 10000000.00
+Step 42: Mean Reward = -0.0595, Balance = 10000000.00
+Step 43: Mean Reward = -0.0605, Balance = 10000000.00
+Step 44: Mean Reward = -0.0614, Balance = 10000000.00
+Step 45: Mean Reward = -0.0600, Balance = 10000000.00
+Step 46: Mean Reward = -0.0609, Balance = 10000000.00
+Step 47: Mean Reward = -0.0596, Balance = 10000000.00
+Step 48: Mean Reward = -0.0604, Balance = 10000000.00
+Step 49: Mean Reward = -0.0612, Balance = 10000000.00
+Step 50: Mean Reward = -0.0620, Balance = 10000000.00
+Step 51: Mean Reward = -0.0612, Balance = 10000000.00
+Step 52: Mean Reward = -0.0619, Balance = 10000000.00
+Step 53: Mean Reward = -0.0626, Balance = 10000000.00
+Step 54: Mean Reward = -0.0633, Balance = 10000000.00
+Step 55: Mean Reward = -0.0640, Balance = 10000000.00
+Step 56: Mean Reward = -0.0632, Balance = 10000000.00
+Step 57: Mean Reward = -0.0621, Balance = 10000000.00
+Step 58: Mean Reward = -0.0610, Balance = 10000000.00
+Step 59: Mean Reward = -0.0600, Balance = 10000000.00
+Step 60: Mean Reward = -0.0593, Balance = 10000000.00
+Step 61: Mean Reward = -0.0587, Balance = 10000000.00
+Step 62: Mean Reward = -0.0581, Balance = 10000000.00
+Step 63: Mean Reward = -0.0575, Balance = 10000000.00
+Step 64: Mean Reward = -0.0581, Balance = 10000000.00
+Step 65: Mean Reward = -0.0575, Balance = 10000000.00
+Step 66: Mean Reward = -0.0582, Balance = 10000000.00
+Step 67: Mean Reward = -0.0588, Balance = 10000000.00
+Step 68: Mean Reward = -0.0594, Balance = 10000000.00
+Step 69: Mean Reward = -0.0600, Balance = 10000000.00
+Step 70: Mean Reward = -0.0606, Balance = 10000000.00
+Step 71: Mean Reward = -0.0611, Balance = 10000000.00
+Step 72: Mean Reward = -0.0617, Balance = 10000000.00
+Step 73: Mean Reward = -0.0608, Balance = 10000000.00
+Step 74: Mean Reward = -0.0600, Balance = 10000000.00
+Step 75: Mean Reward = -0.0592, Balance = 10000000.00
+Step 76: Mean Reward = -0.0584, Balance = 10000000.00
+Step 77: Mean Reward = -0.0577, Balance = 10000000.00
+Step 78: Mean Reward = -0.0582, Balance = 10000000.00
+Step 79: Mean Reward = -0.0587, Balance = 10000000.00
+Step 80: Mean Reward = -0.0580, Balance = 10000000.00
+Step 81: Mean Reward = -0.0585, Balance = 10000000.00
+Step 82: Mean Reward = -0.0590, Balance = 10000000.00
+Step 83: Mean Reward = -0.0595, Balance = 10000000.00
+Step 84: Mean Reward = -0.0600, Balance = 10000000.00
+Step 85: Mean Reward = -0.0605, Balance = 10000000.00
+Step 86: Mean Reward = -0.0609, Balance = 10000000.00
+Step 87: Mean Reward = -0.0614, Balance = 10000000.00
+Step 88: Mean Reward = -0.0618, Balance = 10000000.00
+Step 89: Mean Reward = -0.0622, Balance = 10000000.00
+Step 1: Mean Reward = -0.0200, Balance = 10000000.00
+Step 2: Mean Reward = -0.0200, Balance = 10000000.00
+Step 3: Mean Reward = -0.0200, Balance = 10000000.00
+Step 4: Mean Reward = -0.0200, Balance = 10000000.00
+Step 5: Mean Reward = -0.0200, Balance = 10000000.00
+Step 6: Mean Reward = -0.0200, Balance = 10000000.00
+Step 7: Mean Reward = -0.0200, Balance = 10000000.00
+Step 8: Mean Reward = -0.0200, Balance = 10000000.00
+Step 9: Mean Reward = -0.0200, Balance = 10000000.00
+Step 10: Mean Reward = -0.0200, Balance = 10000000.00
+Step 11: Mean Reward = -0.0200, Balance = 10000000.00
+Step 12: Mean Reward = -0.0200, Balance = 10000000.00
+Step 13: Mean Reward = -0.0200, Balance = 10000000.00
+Step 14: Mean Reward = -0.0200, Balance = 10000000.00
+Step 15: Mean Reward = -0.0200, Balance = 10000000.00
+Step 16: Mean Reward = -0.0200, Balance = 10000000.00
+Step 17: Mean Reward = -0.0200, Balance = 10000000.00
+Step 18: Mean Reward = -0.0200, Balance = 10000000.00
+Step 19: Mean Reward = -0.0200, Balance = 10000000.00
+Step 20: Mean Reward = -0.0200, Balance = 10000000.00
+Step 21: Mean Reward = -0.0200, Balance = 10000000.00
+Step 22: Mean Reward = -0.0200, Balance = 10000000.00
+Step 23: Mean Reward = -0.0200, Balance = 10000000.00
+Step 24: Mean Reward = -0.0200, Balance = 10000000.00
+Step 25: Mean Reward = -0.0200, Balance = 10000000.00
+Step 26: Mean Reward = -0.0200, Balance = 10000000.00
+Step 27: Mean Reward = -0.0200, Balance = 10000000.00
+Step 28: Mean Reward = -0.0200, Balance = 10000000.00
+Step 29: Mean Reward = -0.0200, Balance = 10000000.00
+Step 30: Mean Reward = -0.0200, Balance = 10000000.00
+Step 31: Mean Reward = -0.0200, Balance = 10000000.00
+Step 32: Mean Reward = -0.0200, Balance = 10000000.00
+Step 33: Mean Reward = -0.0200, Balance = 10000000.00
+Step 34: Mean Reward = -0.0200, Balance = 10000000.00
+Step 35: Mean Reward = -0.0200, Balance = 10000000.00
+Step 36: Mean Reward = -0.0200, Balance = 10000000.00
+Step 37: Mean Reward = -0.0200, Balance = 10000000.00
+Step 38: Mean Reward = -0.0200, Balance = 10000000.00
+Step 39: Mean Reward = -0.0200, Balance = 10000000.00
+Step 40: Mean Reward = -0.0200, Balance = 10000000.00
+Step 41: Mean Reward = -0.0200, Balance = 10000000.00
+Step 42: Mean Reward = -0.0200, Balance = 10000000.00
+Step 43: Mean Reward = -0.0200, Balance = 10000000.00
+Step 44: Mean Reward = -0.0200, Balance = 10000000.00
+Step 45: Mean Reward = -0.0200, Balance = 10000000.00
+Step 46: Mean Reward = -0.0200, Balance = 10000000.00
+Step 47: Mean Reward = -0.0200, Balance = 10000000.00
+Step 48: Mean Reward = -0.0200, Balance = 10000000.00
+Step 49: Mean Reward = -0.0200, Balance = 10000000.00
+Step 50: Mean Reward = -0.0200, Balance = 10000000.00
+Step 51: Mean Reward = -0.0200, Balance = 10000000.00
+Step 52: Mean Reward = -0.0200, Balance = 10000000.00
+Step 53: Mean Reward = -0.0200, Balance = 10000000.00
+Step 54: Mean Reward = -0.0200, Balance = 10000000.00
+Step 55: Mean Reward = -0.0200, Balance = 10000000.00
+Step 56: Mean Reward = -0.0200, Balance = 10000000.00
+Step 57: Mean Reward = -0.0200, Balance = 10000000.00
+Step 58: Mean Reward = -0.0200, Balance = 10000000.00
+Step 59: Mean Reward = -0.0200, Balance = 10000000.00
+Step 60: Mean Reward = -0.0200, Balance = 10000000.00
+Step 61: Mean Reward = -0.0200, Balance = 10000000.00
+Step 62: Mean Reward = -0.0200, Balance = 10000000.00
+Step 63: Mean Reward = -0.0200, Balance = 10000000.00
+Step 64: Mean Reward = -0.0200, Balance = 10000000.00
+Step 65: Mean Reward = -0.0200, Balance = 10000000.00
+Step 66: Mean Reward = -0.0200, Balance = 10000000.00
+Step 67: Mean Reward = -0.0200, Balance = 10000000.00
+Step 68: Mean Reward = -0.0200, Balance = 10000000.00
+Step 69: Mean Reward = -0.0200, Balance = 10000000.00
+Step 70: Mean Reward = -0.0200, Balance = 10000000.00
+Step 71: Mean Reward = -0.0200, Balance = 10000000.00
+Step 72: Mean Reward = -0.0200, Balance = 10000000.00
+Step 73: Mean Reward = -0.0200, Balance = 10000000.00
+Step 74: Mean Reward = -0.0200, Balance = 10000000.00
+Step 75: Mean Reward = -0.0200, Balance = 10000000.00
+Step 76: Mean Reward = -0.0200, Balance = 10000000.00
+Step 77: Mean Reward = -0.0200, Balance = 10000000.00
+Step 78: Mean Reward = -0.0200, Balance = 10000000.00
+Step 79: Mean Reward = -0.0200, Balance = 10000000.00
+Step 80: Mean Reward = -0.0200, Balance = 10000000.00
+Step 81: Mean Reward = -0.0200, Balance = 10000000.00
+Step 82: Mean Reward = -0.0200, Balance = 10000000.00
+Step 83: Mean Reward = -0.0200, Balance = 10000000.00
+Step 84: Mean Reward = -0.0200, Balance = 10000000.00
+Step 85: Mean Reward = -0.0200, Balance = 10000000.00
+Step 86: Mean Reward = -0.0200, Balance = 10000000.00
+Step 87: Mean Reward = -0.0200, Balance = 10000000.00
+Step 88: Mean Reward = -0.0200, Balance = 10000000.00
+Step 89: Mean Reward = -0.0200, Balance = 10000000.00
+Step 1: Mean Reward = -0.0200, Balance = 10000000.00
+Step 2: Mean Reward = -0.0200, Balance = 10000000.00
+Step 1: Mean Reward = -0.1000, Balance = 0.00
+Step 2: Mean Reward = -0.0800, Balance = 0.00
+Step 3: Mean Reward = 0.0454, Balance = 0.00
+Step 4: Mean Reward = 0.1677, Balance = 0.00
+Step 5: Mean Reward = 0.2116, Balance = 0.00
+Step 6: Mean Reward = 0.2887, Balance = 0.00
+Step 7: Mean Reward = 0.3384, Balance = 10050970.12
+Step 8: Mean Reward = 0.3654, Balance = 10050970.12
+Step 9: Mean Reward = 0.3783, Balance = 0.00
+Step 10: Mean Reward = 0.3837, Balance = 0.00
+Step 11: Mean Reward = 0.3887, Balance = 0.00
+Step 12: Mean Reward = 0.3930, Balance = 0.00
+Step 13: Mean Reward = 0.3887, Balance = 0.00
+Step 14: Mean Reward = 0.3759, Balance = 0.00
+Step 15: Mean Reward = 0.3660, Balance = 0.00
+Step 16: Mean Reward = 0.3441, Balance = 0.00
+Step 17: Mean Reward = 0.3222, Balance = 0.00
+Step 18: Mean Reward = 0.3027, Balance = 0.00
+Step 19: Mean Reward = 0.2858, Balance = 0.00
+Step 20: Mean Reward = 0.2705, Balance = 0.00
+Step 21: Mean Reward = 0.2566, Balance = 0.00
+Step 22: Mean Reward = 0.2441, Balance = 0.00
+Step 23: Mean Reward = 0.2326, Balance = 0.00
+Step 24: Mean Reward = 0.2221, Balance = 0.00
+Step 25: Mean Reward = 0.2124, Balance = 0.00
+Step 26: Mean Reward = 0.2034, Balance = 0.00
+Step 27: Mean Reward = 0.1952, Balance = 0.00
+Step 28: Mean Reward = 0.1985, Balance = 0.00
+Step 29: Mean Reward = 0.2068, Balance = 0.00
+Step 30: Mean Reward = 0.2293, Balance = 0.00
+Step 31: Mean Reward = 0.2966, Balance = 11498312.10
+Step 32: Mean Reward = 0.3598, Balance = 11498312.10
+Step 33: Mean Reward = 0.4191, Balance = 11498312.10
+Step 34: Mean Reward = 0.4750, Balance = 11498312.10
+Step 35: Mean Reward = 0.5274, Balance = 0.00
+Step 36: Mean Reward = 0.5686, Balance = 0.00
+Step 37: Mean Reward = 0.6094, Balance = 0.00
+Step 38: Mean Reward = 0.6337, Balance = 0.00
+Step 39: Mean Reward = 0.6470, Balance = 11237000.03
+Step 40: Mean Reward = 0.6483, Balance = 0.00
+Step 41: Mean Reward = 0.6072, Balance = 0.00
+Step 42: Mean Reward = 0.5681, Balance = 0.00
+Step 43: Mean Reward = 0.5308, Balance = 0.00
+Step 44: Mean Reward = 0.4951, Balance = 0.00
+Step 45: Mean Reward = 0.4652, Balance = 0.00
+Step 46: Mean Reward = 0.4432, Balance = 0.00
+Step 47: Mean Reward = 0.4222, Balance = 0.00
+Step 48: Mean Reward = 0.4070, Balance = 0.00
+Step 49: Mean Reward = 0.3972, Balance = 0.00
+Step 50: Mean Reward = 0.3879, Balance = 0.00
+Step 51: Mean Reward = 0.3852, Balance = 11263501.33
+Step 52: Mean Reward = 0.3825, Balance = 0.00
+Step 53: Mean Reward = 0.3798, Balance = 0.00
+Step 54: Mean Reward = 0.3773, Balance = 0.00
+Step 55: Mean Reward = 0.3716, Balance = 0.00
+Step 56: Mean Reward = 0.3806, Balance = 12189179.44
+Step 57: Mean Reward = 0.3880, Balance = 12189179.44
+Step 58: Mean Reward = 0.3952, Balance = 12189179.44
+Step 59: Mean Reward = 0.4022, Balance = 12189179.44
+Step 60: Mean Reward = 0.4089, Balance = 12189179.44
+Step 61: Mean Reward = 0.4152, Balance = 12189179.44
+Step 62: Mean Reward = 0.4214, Balance = 12189179.44
+Step 63: Mean Reward = 0.4274, Balance = 12189179.44
+Step 64: Mean Reward = 0.4331, Balance = 0.00
+Step 65: Mean Reward = 0.4355, Balance = 11949773.07
+Step 66: Mean Reward = 0.4253, Balance = 0.00
+Step 67: Mean Reward = 0.4154, Balance = 0.00
+Step 68: Mean Reward = 0.4058, Balance = 0.00
+Step 69: Mean Reward = 0.3965, Balance = 0.00
+Step 70: Mean Reward = 0.3874, Balance = 0.00
+Step 71: Mean Reward = 0.3785, Balance = 0.00
+Step 72: Mean Reward = 0.3699, Balance = 0.00
+Step 73: Mean Reward = 0.3719, Balance = 0.00
+Step 74: Mean Reward = 0.3837, Balance = 0.00
+Step 75: Mean Reward = 0.4075, Balance = 0.00
+Step 76: Mean Reward = 0.4347, Balance = 0.00
+Step 77: Mean Reward = 0.4679, Balance = 0.00
+Step 78: Mean Reward = 0.5003, Balance = 0.00
+Step 79: Mean Reward = 0.5318, Balance = 0.00
+Step 80: Mean Reward = 0.5729, Balance = 0.00
+Step 81: Mean Reward = 0.6129, Balance = 0.00
+Step 82: Mean Reward = 0.6520, Balance = 0.00
+Step 83: Mean Reward = 0.6810, Balance = 0.00
+Step 84: Mean Reward = 0.7008, Balance = 0.00
+Step 85: Mean Reward = 0.7116, Balance = 0.00
+Step 86: Mean Reward = 0.7187, Balance = 0.00
+Step 87: Mean Reward = 0.7197, Balance = 0.00
+Step 88: Mean Reward = 0.7207, Balance = 0.00
+Step 89: Mean Reward = 0.7216, Balance = 0.00
+Step 1: Mean Reward = 0.0000, Balance = 10000000.00
+Step 2: Mean Reward = 0.0000, Balance = 10000000.00
+Step 3: Mean Reward = -0.0022, Balance = 10000000.00
+Step 4: Mean Reward = -0.0042, Balance = 10000000.00
+Step 5: Mean Reward = -0.0057, Balance = 10000000.00
+Step 6: Mean Reward = -0.0070, Balance = 10000000.00
+Step 7: Mean Reward = -0.0080, Balance = 10000000.00
+Step 8: Mean Reward = -0.0089, Balance = 10000000.00
+Step 9: Mean Reward = -0.0096, Balance = 10000000.00
+Step 10: Mean Reward = -0.0101, Balance = 10000000.00
+Step 11: Mean Reward = -0.0104, Balance = 10000000.00
+Step 12: Mean Reward = -0.0107, Balance = 10000000.00
+Step 13: Mean Reward = -0.0108, Balance = 10000000.00
+Step 14: Mean Reward = -0.0108, Balance = 10000000.00
+Step 15: Mean Reward = -0.0106, Balance = 10000000.00
+Step 16: Mean Reward = -0.0103, Balance = 10000000.00
+Step 17: Mean Reward = -0.0099, Balance = 10000000.00
+Step 18: Mean Reward = -0.0100, Balance = 0.00
+Step 19: Mean Reward = -0.0081, Balance = 0.00
+Step 20: Mean Reward = -0.0049, Balance = 0.00
+Step 21: Mean Reward = -0.0053, Balance = 0.00
+Step 22: Mean Reward = -0.0056, Balance = 0.00
+Step 23: Mean Reward = -0.0061, Balance = 0.00
+Step 24: Mean Reward = -0.0065, Balance = 0.00
+Step 25: Mean Reward = -0.0071, Balance = 0.00
+Step 26: Mean Reward = -0.0076, Balance = 0.00
+Step 27: Mean Reward = 0.0210, Balance = 0.00
+Step 28: Mean Reward = 0.0852, Balance = 0.00
+Step 29: Mean Reward = 0.1733, Balance = 10867255.57
+Step 30: Mean Reward = 0.2545, Balance = 10867255.57
+Step 31: Mean Reward = 0.3325, Balance = 10867255.57
+Step 32: Mean Reward = 0.4056, Balance = 10867255.57
+Step 33: Mean Reward = 0.4743, Balance = 10867255.57
+Step 34: Mean Reward = 0.5390, Balance = 10867255.57
+Step 35: Mean Reward = 0.6000, Balance = 10867255.57
+Step 36: Mean Reward = 0.6576, Balance = 10867255.57
+Step 37: Mean Reward = 0.6907, Balance = 10867255.57
+Step 38: Mean Reward = 0.6947, Balance = 10867255.57
+Step 39: Mean Reward = 0.6764, Balance = 10867255.57
+Step 40: Mean Reward = 0.6591, Balance = 10867255.57
+Step 41: Mean Reward = 0.6426, Balance = 10867255.57
+Step 42: Mean Reward = 0.6270, Balance = 10867255.57
+Step 43: Mean Reward = 0.6121, Balance = 10867255.57
+Step 44: Mean Reward = 0.5980, Balance = 10867255.57
+Step 45: Mean Reward = 0.5845, Balance = 10867255.57
+Step 46: Mean Reward = 0.5716, Balance = 10867255.57
+Step 47: Mean Reward = 0.5592, Balance = 10867255.57
+Step 48: Mean Reward = 0.5473, Balance = 10867255.57
+Step 49: Mean Reward = 0.5360, Balance = 10867255.57
+Step 50: Mean Reward = 0.5252, Balance = 10867255.57
+Step 51: Mean Reward = 0.5147, Balance = 10867255.57
+Step 52: Mean Reward = 0.5047, Balance = 10867255.57
+Step 53: Mean Reward = 0.4950, Balance = 10867255.57
+Step 54: Mean Reward = 0.4856, Balance = 10867255.57
+Step 55: Mean Reward = 0.4767, Balance = 10867255.57
+Step 56: Mean Reward = 0.4680, Balance = 10867255.57
+Step 57: Mean Reward = 0.4597, Balance = 10867255.57
+Step 58: Mean Reward = 0.4517, Balance = 10867255.57
+Step 59: Mean Reward = 0.4439, Balance = 10867255.57
+Step 60: Mean Reward = 0.4363, Balance = 10867255.57
+Step 61: Mean Reward = 0.4290, Balance = 10867255.57
+Step 62: Mean Reward = 0.4219, Balance = 10867255.57
+Step 63: Mean Reward = 0.4150, Balance = 10867255.57
+Step 64: Mean Reward = 0.4084, Balance = 10867255.57
+Step 65: Mean Reward = 0.4018, Balance = 0.00
+Step 66: Mean Reward = 0.3901, Balance = 0.00
+Step 67: Mean Reward = 0.3765, Balance = 0.00
+Step 68: Mean Reward = 0.3600, Balance = 0.00
+Step 69: Mean Reward = 0.3402, Balance = 0.00
+Step 70: Mean Reward = 0.3209, Balance = 0.00
+Step 71: Mean Reward = 0.3031, Balance = 0.00
+Step 72: Mean Reward = 0.2919, Balance = 0.00
+Step 73: Mean Reward = 0.2861, Balance = 0.00
+Step 74: Mean Reward = 0.2851, Balance = 11246829.25
+Step 75: Mean Reward = 0.2842, Balance = 11246829.25
+Step 76: Mean Reward = 0.2879, Balance = 11246829.25
+Step 77: Mean Reward = 0.2934, Balance = 11246829.25
+Step 78: Mean Reward = 0.3018, Balance = 11246829.25
+Step 79: Mean Reward = 0.3133, Balance = 11246829.25
+Step 80: Mean Reward = 0.3245, Balance = 11246829.25
+Step 81: Mean Reward = 0.3346, Balance = 11246829.25
+Step 82: Mean Reward = 0.3393, Balance = 11246829.25
+Step 83: Mean Reward = 0.3392, Balance = 11246829.25
+Step 84: Mean Reward = 0.3351, Balance = 11246829.25
+Step 85: Mean Reward = 0.3312, Balance = 11246829.25
+Step 86: Mean Reward = 0.3273, Balance = 11246829.25
+Step 87: Mean Reward = 0.3235, Balance = 11246829.25
+Step 88: Mean Reward = 0.3199, Balance = 11246829.25
+Step 89: Mean Reward = 0.3163, Balance = 11246829.25
+
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -23.9       |
+| time/                   |             |
+|    fps                  | 184         |
+|    iterations           | 136         |
+|    time_elapsed         | 3017        |
+|    total_timesteps      | 557056      |
+| train/                  |             |
+|    approx_kl            | 0.011709171 |
+|    clip_fraction        | 0.161       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1          |
+|    explained_variance   | 0.00174     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 1.25e+03    |
+|    n_updates            | 1350        |
+|    policy_gradient_loss | 0.00599     |
+|    value_loss           | 280         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -12.9       |
+| time/                   |             |
+|    fps                  | 184         |
+|    iterations           | 137         |
+|    time_elapsed         | 3040        |
+|    total_timesteps      | 561152      |
+| train/                  |             |
+|    approx_kl            | 0.011158284 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.00135     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 1.4e+03     |
+|    n_updates            | 1360        |
+|    policy_gradient_loss | 0.00388     |
+|    value_loss           | 318         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -11.8       |
+| time/                   |             |
+|    fps                  | 184         |
+|    iterations           | 138         |
+|    time_elapsed         | 3064        |
+|    total_timesteps      | 565248      |
+| train/                  |             |
+|    approx_kl            | 0.011085441 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1          |
+|    explained_variance   | 0.00069     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 1.23e+03    |
+|    n_updates            | 1370        |
+|    policy_gradient_loss | 0.00438     |
+|    value_loss           | 454         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -16         |
+| time/                   |             |
+|    fps                  | 184         |
+|    iterations           | 139         |
+|    time_elapsed         | 3089        |
+|    total_timesteps      | 569344      |
+| train/                  |             |
+|    approx_kl            | 0.011456332 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | -0.000393   |
+|    learning_rate        | 0.0005      |
+|    loss                 | 831         |
+|    n_updates            | 1380        |
+|    policy_gradient_loss | 0.00606     |
+|    value_loss           | 378         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -17.4       |
+| time/                   |             |
+|    fps                  | 184         |
+|    iterations           | 140         |
+|    time_elapsed         | 3114        |
+|    total_timesteps      | 573440      |
+| train/                  |             |
+|    approx_kl            | 0.011336176 |
+|    clip_fraction        | 0.156       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.000202    |
+|    learning_rate        | 0.0005      |
+|    loss                 | 866         |
+|    n_updates            | 1390        |
+|    policy_gradient_loss | 0.00543     |
+|    value_loss           | 296         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -0.788      |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 141         |
+|    time_elapsed         | 3140        |
+|    total_timesteps      | 577536      |
+| train/                  |             |
+|    approx_kl            | 0.011288756 |
+|    clip_fraction        | 0.162       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.00257     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 756         |
+|    n_updates            | 1400        |
+|    policy_gradient_loss | 0.00576     |
+|    value_loss           | 277         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | -1.77       |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 142         |
+|    time_elapsed         | 3164        |
+|    total_timesteps      | 581632      |
+| train/                  |             |
+|    approx_kl            | 0.011290623 |
+|    clip_fraction        | 0.164       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.00205     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 2.45e+03    |
+|    n_updates            | 1410        |
+|    policy_gradient_loss | 0.0056      |
+|    value_loss           | 537         |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 479          |
+|    ep_rew_mean          | 15.4         |
+| time/                   |              |
+|    fps                  | 183          |
+|    iterations           | 143          |
+|    time_elapsed         | 3186         |
+|    total_timesteps      | 585728       |
+| train/                  |              |
+|    approx_kl            | 0.0113327615 |
+|    clip_fraction        | 0.16         |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.01        |
+|    explained_variance   | -0.00108     |
+|    learning_rate        | 0.0005       |
+|    loss                 | 1.03e+03     |
+|    n_updates            | 1420         |
+|    policy_gradient_loss | 0.00496      |
+|    value_loss           | 346          |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | 18.9        |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 144         |
+|    time_elapsed         | 3213        |
+|    total_timesteps      | 589824      |
+| train/                  |             |
+|    approx_kl            | 0.010673541 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.00128     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 935         |
+|    n_updates            | 1430        |
+|    policy_gradient_loss | 0.0052      |
+|    value_loss           | 386         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | 20.3        |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 145         |
+|    time_elapsed         | 3239        |
+|    total_timesteps      | 593920      |
+| train/                  |             |
+|    approx_kl            | 0.011237187 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1          |
+|    explained_variance   | 0.00274     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 827         |
+|    n_updates            | 1440        |
+|    policy_gradient_loss | 0.00522     |
+|    value_loss           | 308         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | 18.9        |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 146         |
+|    time_elapsed         | 3264        |
+|    total_timesteps      | 598016      |
+| train/                  |             |
+|    approx_kl            | 0.011650589 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.01       |
+|    explained_variance   | 0.00246     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 872         |
+|    n_updates            | 1450        |
+|    policy_gradient_loss | 0.00532     |
+|    value_loss           | 301         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 479         |
+|    ep_rew_mean          | 19.2        |
+| time/                   |             |
+|    fps                  | 183         |
+|    iterations           | 147         |
+|    time_elapsed         | 3285        |
+|    total_timesteps      | 602112      |
+| train/                  |             |
+|    approx_kl            | 0.011249544 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1          |
+|    explained_variance   | 0.00102     |
+|    learning_rate        | 0.0005      |
+|    loss                 | 1.49e+03    |
+|    n_updates            | 1460        |
+|    policy_gradient_loss | 0.00449     |
+|    value_loss           | 391         |
+-----------------------------------------
+2025-10-30 23:17:18,882 - INFO - Saved model to ppo_trading2.zip
+2025-10-30 23:17:18,882 - INFO - Model structure: TransformerPolicy(
+  (features_extractor): None
+  (pi_features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (vf_features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (mlp_extractor): None
+  (action_net): Linear(in_features=32, out_features=3, bias=True)
+  (value_net): Linear(in_features=32, out_features=1, bias=True)
+  (transformer): BTCTransformer(
+    (input_proj): Sequential(
+      (0): Linear(in_features=7, out_features=32, bias=True)
+      (1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+      (2): ReLU()
+      (3): Dropout(p=0.1, inplace=False)
+    )
+    (pos_encoder): PositionalEncoding()
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+          )
+          (linear1): Linear(in_features=32, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=32, bias=True)
+          (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+    )
+    (action_head): Linear(in_features=32, out_features=3, bias=True)
+    (value_head): Linear(in_features=32, out_features=1, bias=True)
+  )
+)
+2025-10-30 23:17:18,883 - INFO - Total parameters: 13220
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,908 - INFO - Day 11, Step 1, Episode Reward: 0.0000, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,908 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,919 - INFO - Day 12, Step 2, Episode Reward: 0.0000, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,919 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,930 - INFO - Day 13, Step 3, Episode Reward: -0.0067, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,930 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,940 - INFO - Day 14, Step 4, Episode Reward: -0.0100, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,940 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,952 - INFO - Day 15, Step 5, Episode Reward: -0.0120, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,952 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,963 - INFO - Day 16, Step 6, Episode Reward: -0.0133, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,964 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,973 - INFO - Day 17, Step 7, Episode Reward: -0.0143, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,973 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,982 - INFO - Day 18, Step 8, Episode Reward: -0.0150, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,983 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:18,993 - INFO - Day 19, Step 9, Episode Reward: -0.0156, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:18,993 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,003 - INFO - Day 20, Step 10, Episode Reward: -0.0140, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,004 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,012 - INFO - Day 21, Step 11, Episode Reward: -0.0140, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,012 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,021 - INFO - Day 22, Step 12, Episode Reward: -0.0140, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,021 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,033 - INFO - Day 23, Step 13, Episode Reward: -0.0120, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,033 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,041 - INFO - Day 24, Step 14, Episode Reward: -0.0100, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,041 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,054 - INFO - Day 25, Step 15, Episode Reward: -0.0080, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,054 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,065 - INFO - Day 26, Step 16, Episode Reward: -0.0060, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,065 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,074 - INFO - Day 27, Step 17, Episode Reward: -0.0040, Balance: 10000000.00, Holding: 0.0000, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,074 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,085 - INFO - Day 28, Step 18, Episode Reward: -0.0120, Balance: 0.00, Holding: 447.4934, Total Asset Value: 10000000.00
+2025-10-30 23:17:19,085 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,095 - INFO - Day 29, Step 19, Episode Reward: 0.0270, Balance: 0.00, Holding: 447.4934, Total Asset Value: 10037016.65
+2025-10-30 23:17:19,095 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,105 - INFO - Day 30, Step 20, Episode Reward: 0.0548, Balance: 0.00, Holding: 447.4934, Total Asset Value: 10027811.71
+2025-10-30 23:17:19,105 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,114 - INFO - Day 31, Step 21, Episode Reward: -0.0115, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9933636.73
+2025-10-30 23:17:19,114 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,125 - INFO - Day 32, Step 22, Episode Reward: -0.0135, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9712409.44
+2025-10-30 23:17:19,126 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,135 - INFO - Day 33, Step 23, Episode Reward: -0.0155, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9111416.90
+2025-10-30 23:17:19,136 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,145 - INFO - Day 34, Step 24, Episode Reward: -0.0175, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9017617.81
+2025-10-30 23:17:19,145 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,155 - INFO - Day 35, Step 25, Episode Reward: -0.0195, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9155002.75
+2025-10-30 23:17:19,155 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,167 - INFO - Day 36, Step 26, Episode Reward: -0.0215, Balance: 0.00, Holding: 447.4934, Total Asset Value: 9842809.01
+2025-10-30 23:17:19,167 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,175 - INFO - Day 37, Step 27, Episode Reward: 0.7665, Balance: 0.00, Holding: 447.4934, Total Asset Value: 10788008.97
+2025-10-30 23:17:19,176 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,186 - INFO - Day 38, Step 28, Episode Reward: 1.8183, Balance: 0.00, Holding: 447.4934, Total Asset Value: 11041795.88
+2025-10-30 23:17:19,186 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,198 - INFO - Day 39, Step 29, Episode Reward: 2.6385, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,198 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,206 - INFO - Day 40, Step 30, Episode Reward: 2.6087, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,206 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,217 - INFO - Day 41, Step 31, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,217 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,228 - INFO - Day 42, Step 32, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,228 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,236 - INFO - Day 43, Step 33, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,238 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,246 - INFO - Day 44, Step 34, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,246 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,256 - INFO - Day 45, Step 35, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,256 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,266 - INFO - Day 46, Step 36, Episode Reward: 2.6731, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,267 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,274 - INFO - Day 47, Step 37, Episode Reward: 1.8851, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,275 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,285 - INFO - Day 48, Step 38, Episode Reward: 0.8413, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,285 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,295 - INFO - Day 49, Step 39, Episode Reward: -0.0180, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,295 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,304 - INFO - Day 50, Step 40, Episode Reward: -0.0180, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,305 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,314 - INFO - Day 51, Step 41, Episode Reward: -0.0160, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,315 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,325 - INFO - Day 52, Step 42, Episode Reward: -0.0140, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,326 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,336 - INFO - Day 53, Step 43, Episode Reward: -0.0120, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,337 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,347 - INFO - Day 54, Step 44, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,347 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,357 - INFO - Day 55, Step 45, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,357 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,367 - INFO - Day 56, Step 46, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,367 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,377 - INFO - Day 57, Step 47, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,378 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,390 - INFO - Day 58, Step 48, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,390 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,401 - INFO - Day 59, Step 49, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,401 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,411 - INFO - Day 60, Step 50, Episode Reward: -0.0060, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,411 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,421 - INFO - Day 61, Step 51, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,421 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,435 - INFO - Day 62, Step 52, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,435 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,453 - INFO - Day 63, Step 53, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,454 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,472 - INFO - Day 64, Step 54, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,472 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,490 - INFO - Day 65, Step 55, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,490 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,505 - INFO - Day 66, Step 56, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,505 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,517 - INFO - Day 67, Step 57, Episode Reward: -0.0060, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,517 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,528 - INFO - Day 68, Step 58, Episode Reward: -0.0060, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,528 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,539 - INFO - Day 69, Step 59, Episode Reward: -0.0080, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,539 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,550 - INFO - Day 70, Step 60, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,550 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,562 - INFO - Day 71, Step 61, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,563 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,574 - INFO - Day 72, Step 62, Episode Reward: -0.0120, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,575 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,587 - INFO - Day 73, Step 63, Episode Reward: -0.0120, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,587 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,598 - INFO - Day 74, Step 64, Episode Reward: -0.0100, Balance: 10867255.57, Holding: 0.0000, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,598 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,607 - INFO - Day 75, Step 65, Episode Reward: -0.0200, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10867255.57
+2025-10-30 23:17:19,607 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,617 - INFO - Day 76, Step 66, Episode Reward: -0.3673, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10489805.78
+2025-10-30 23:17:19,618 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,630 - INFO - Day 77, Step 67, Episode Reward: -0.5199, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10701441.46
+2025-10-30 23:17:19,631 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,639 - INFO - Day 78, Step 68, Episode Reward: -0.7493, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10615819.89
+2025-10-30 23:17:19,639 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,651 - INFO - Day 79, Step 69, Episode Reward: -1.0067, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10585296.55
+2025-10-30 23:17:19,651 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,663 - INFO - Day 80, Step 70, Episode Reward: -1.0067, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10889133.26
+2025-10-30 23:17:19,663 - INFO - Action distribution: {0: 0, 1: 1, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,672 - INFO - Day 81, Step 71, Episode Reward: -0.9441, Balance: 0.00, Holding: 384.7642, Total Asset Value: 10933188.75
+2025-10-30 23:17:19,672 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,683 - INFO - Day 82, Step 72, Episode Reward: -0.5070, Balance: 0.00, Holding: 384.7642, Total Asset Value: 11340069.15
+2025-10-30 23:17:19,684 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,693 - INFO - Day 83, Step 73, Episode Reward: -0.1289, Balance: 0.00, Holding: 384.7642, Total Asset Value: 11278091.34
+2025-10-30 23:17:19,694 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,704 - INFO - Day 84, Step 74, Episode Reward: 0.2103, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,704 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,714 - INFO - Day 85, Step 75, Episode Reward: 0.2183, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,714 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,723 - INFO - Day 86, Step 76, Episode Reward: 0.5637, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,724 - INFO - Action distribution: {0: 0, 1: 0, 2: 1}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,734 - INFO - Day 87, Step 77, Episode Reward: 0.7163, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,734 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,743 - INFO - Day 88, Step 78, Episode Reward: 0.9476, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,743 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,754 - INFO - Day 89, Step 79, Episode Reward: 1.2071, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,754 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,764 - INFO - Day 90, Step 80, Episode Reward: 1.2091, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,764 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,772 - INFO - Day 91, Step 81, Episode Reward: 1.1484, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,772 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,782 - INFO - Day 92, Step 82, Episode Reward: 0.7133, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,783 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,792 - INFO - Day 93, Step 83, Episode Reward: 0.3353, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,793 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,803 - INFO - Day 94, Step 84, Episode Reward: -0.0040, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,803 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,812 - INFO - Day 95, Step 85, Episode Reward: -0.0020, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,812 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,822 - INFO - Day 96, Step 86, Episode Reward: 0.0000, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,822 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,832 - INFO - Day 97, Step 87, Episode Reward: 0.0000, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,833 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,841 - INFO - Day 98, Step 88, Episode Reward: 0.0000, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,841 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+action type: <class 'numpy.ndarray'>, action shape: ()
+Warning: current_step 11 out of bounds, resetting to 10
+2025-10-30 23:17:19,853 - INFO - Day 99, Step 89, Episode Reward: 0.0000, Balance: 11246829.25, Holding: 0.0000, Total Asset Value: 11246829.25
+2025-10-30 23:17:19,854 - INFO - Action distribution: {0: 1, 1: 0, 2: 0}
+2025-10-30 23:17:19,854 - INFO - Max Drawdown: 10.16%
+2025-10-30 23:17:19,857 - INFO - Saved evaluation log data to eval_log_data.csv
+PS F:\AI_Quant> & D:/ProgramData/anaconda3/python.exe f:/AI_Quant/transformer_ppo/plot.py
+Saved plot to btc_eval_plot1.png
+
+ep_rew_mean先高，后负，然后又高，摇摆不定！
