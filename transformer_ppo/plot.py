@@ -6,7 +6,7 @@ import sys
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-def plot_btc_rewards(data_path='btc_daily.csv', eval_log_file='eval_log_data.csv', output_file='btc_eval_plot.png'):
+def plot_btc_rewards(data_path='btc_daily.csv', eval_log_file='eval_log_data.csv', output_file='btc_eval_plot1.png'):
     # Load full dataset and evaluation log
     full_df = pd.read_csv(data_path)
     eval_df = pd.read_csv(eval_log_file)

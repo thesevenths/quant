@@ -56,7 +56,7 @@ def train(load_model=False):
             'dropout': 0.1,
             'max_len': 5000,
             'optimizer_kwargs': {
-                'weight_decay': 1e-4
+                'weight_decay': 5e-4
             }
         }
         model = PPO(
@@ -65,10 +65,10 @@ def train(load_model=False):
             policy_kwargs=policy_kwargs,
             verbose=1,
             device=device,
-            ent_coef=0.15,  # [MODIFIED] 增加熵系数以鼓励探索
-            learning_rate=0.0003,  # [MODIFIED] 降低学习率以提高稳定性
-            vf_coef=2.5,  # [MODIFIED] 增加value loss权重以改善拟合
-            n_steps=2048,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
+            ent_coef=0.2,  # [MODIFIED] 增加熵系数以鼓励探索
+            learning_rate=0.0005,  # [MODIFIED] 降低学习率以提高稳定性
+            vf_coef=3,  # [MODIFIED] 增加value loss权重以改善拟合
+            n_steps=4096,  # [MODIFIED] 增加每轮步数以获得更稳定梯度
         )
         model.learn(total_timesteps=600000)
         model.save(model_path)
